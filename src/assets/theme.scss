@@ -1,0 +1,77 @@
+// Import Bulma's core
+@import '~bulma/sass/utilities/_all.sass';
+
+@import '@/assets/_colors.scss'; // primary, dark
+
+// Set your colors
+$primary-invert: findColorInvert($primary);
+$dark-invert: findColorInvert($dark);
+$link-invert: findColorInvert($link);
+
+$twitter: #4099ff;
+$twitter-invert: findColorInvert($twitter);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  'white': (
+    $white,
+    $black,
+  ),
+  'black': (
+    $black,
+    $white,
+  ),
+  'light': (
+    $light,
+    $light-invert,
+  ),
+  'dark': (
+    $dark,
+    $dark-invert,
+  ),
+  'primary': (
+    $primary,
+    $primary-invert,
+  ),
+  'info': (
+    $info,
+    $info-invert,
+  ),
+  'success': (
+    $success,
+    $success-invert,
+  ),
+  'warning': (
+    $warning,
+    $warning-invert,
+  ),
+  'danger': (
+    $danger,
+    $danger-invert,
+  ),
+  'twitter': (
+    $twitter,
+    $twitter-invert,
+  ),
+);
+
+// Links
+$link-hover: $link;
+$link-focus-border: $link;
+
+// Tabs
+$tabs-toggle-link-border-width: 2px;
+$tabs-toggle-link-border-color: $primary;
+$tabs-toggle-link-hover-border-color: $primary;
+$tabs-toggle-link-active-background-color: $primary;
+$tabs-toggle-link-active-border-color: $primary;
+
+// Fonts
+$family-sans-serif: 'Montserrat', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+  'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Helvetica', 'Arial',
+  sans-serif;
+$family-primary: $family-sans-serif;
+
+// Import Bulma and Buefy styles
+@import '~bulma';
+@import '~buefy/src/scss/buefy';

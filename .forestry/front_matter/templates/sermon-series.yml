@@ -1,0 +1,19 @@
+---
+label: Sermon Series
+hide_body: false
+fields:
+  - type: text
+    name: slug
+    label: slug
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: id
+    label: id
+  - type: datetime
+    name: date
+    label: date
+  - type: file
+    name: thumbnail
+    label: thumbnail

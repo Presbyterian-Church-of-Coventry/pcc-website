@@ -1,0 +1,179 @@
+backend:
+  name: git-gateway
+  # name: test-repo
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: 'content/images' # Media files will be stored in the repo under static/images/uploads
+media_folder_relative: true
+public_folder: '/content/images' # The src attribute for uploaded media will begin with /images/uploads
+display_url: https://coventrypca.church
+collections:
+  - label: 'Sermons'
+    label_singular: 'Sermon'
+    name: 'sermons'
+    folder: 'content/sermons'
+    create: true
+    preview_path_date_field: date
+    slug: '{{year}}-{{month}}-{{slug}}' # Filename template
+    summary: '{{date}} - {{title}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - label: 'Sermon Series'
+        name: 'series'
+        widget: 'relation'
+        collection: 'series'
+        searchFields: ['title']
+        valueField: 'id'
+        displayFields: ['title']
+        required: false
+      - label: 'Preacher'
+        name: 'preacher'
+        widget: 'relation'
+        collection: 'preacher'
+        searchFields: ['name']
+        valueField: 'id'
+        displayFields: ['name']
+      - {
+          label: 'Date Preached',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DD',
+          timeFormat: false, # hides time picker
+        }
+      - { label: 'Scripture', name: 'scripture', widget: 'string' }
+      - {
+          label: 'Sermon Audio',
+          name: 'audio',
+          widget: 'string',
+          required: false,
+          hint: 'Direct link to Sermon Audio file (either the download link from SermonAudio.com or another cloud storage service like Wasabi).',
+        }
+      - {
+          label: 'Sermon Video',
+          name: 'video',
+          widget: 'string',
+          required: false,
+          hint: 'Link to sermon video (eg. Youtube - https://www.youtube.com/watch?v=Of95jIH0z24',
+        }
+      - {
+          label: 'Description',
+          name: 'body',
+          required: false,
+          widget: 'markdown',
+        }
+  - label: 'Preachers'
+    label_singular: 'Preacher'
+    name: 'preacher'
+    folder: 'content/preachers'
+    identifier_field: 'name'
+    create: true # Allow users to create new documents in this collection
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - {
+          label: 'ID',
+          name: 'id',
+          widget: 'string',
+          hint: 'Required. This is needed in order for Sermons to be able to reference a Preacher.',
+        }
+      - { label: 'Bio', name: 'body', widget: 'markdown' }
+  - label: 'Sermon Series'
+    name: 'series'
+    folder: 'content/series'
+    create: true # Allow users to create new documents in this collection
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Slug',
+          name: 'slug',
+          widget: 'string',
+          hint: 'Specify the slug. Will come from the title by default',
+          required: false,
+        }
+      - {
+          label: 'ID',
+          name: 'id',
+          widget: 'string',
+          hint: 'Required. This is needed in order for Sermons to be able to reference a Series.',
+        }
+      - {
+          label: 'Start Date',
+          name: 'date',
+          widget: 'date',
+          hint: 'Enter first date preached.',
+        }
+      - { label: 'Series Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Description', name: 'body', widget: 'markdown' }
+  - label: 'Events'
+    label_singular: 'Event'
+    name: 'event'
+    folder: 'content/events'
+    create: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Event Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Start Date', name: 'startDate', widget: 'datetime' }
+      - { label: 'End Date', name: 'endDate', widget: 'datetime' }
+      - {
+          label: 'Description',
+          name: 'body',
+          required: false,
+          widget: 'markdown',
+        }
+  - label: 'Settings'
+    name: 'settings'
+    files:
+      - label: 'Alert'
+        name: 'alert'
+        file: 'content/settings/alert.md'
+        fields:
+          - { label: 'Show Until', name: 'showUntil', widget: 'datetime' }
+          - { label: 'Message', name: 'body', widget: 'string' }
+      - label: 'Live Page'
+        name: 'live'
+        file: 'content/settings/live.md'
+        fields:
+          - { label: 'Date of Service', name: 'date', widget: 'string' }
+          - { label: 'Bulletin Link', name: 'bulletinLink', widget: 'string' }
+          - { label: 'Live Stream Video', name: 'video', widget: 'string' }
+      - label: 'Current Series'
+        name: 'current-series'
+        file: 'content/settings/current-series.md'
+        fields:
+          - {
+              label: 'Series',
+              name: 'series',
+              widget: 'relation',
+              collection: 'series',
+              searchFields: ['title'],
+              valueField: 'id',
+              displayFields: ['title'],
+            }
+      - label: 'Recommended Books'
+        name: 'recommended-books'
+        file: 'content/settings/recommended-books.md'
+        fields:
+          - label: 'Sections'
+            name: 'sections'
+            widget: 'list'
+            fields:
+              - label: 'Section'
+                name: 'section'
+                widget: 'object'
+                fields:
+                  - { label: 'Category', name: 'category', widget: string }
+                  - label: 'Books'
+                    name: 'books'
+                    widget: list
+                    fields:
+                      - label: 'Book'
+                        name: 'book'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Name', name: 'name', widget: 'string' }
+                          - {
+                              label: 'Image',
+                              name: 'image',
+                              widget: 'image',
+                              required: false,
+                            }
+                          - { label: 'Link', name: 'link', widget: 'string' }
