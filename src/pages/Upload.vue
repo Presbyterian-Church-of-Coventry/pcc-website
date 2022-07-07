@@ -246,25 +246,25 @@ export default {
       this.loading1 = false
     },
     fetchSermons() {
-      fetch('https://api.blazenetworking.com/pcc/v1/sermons')
-        .then((response) => response.json())
+      axios.get('https://api.blazenetworking.com/pcc/v1/sermons')
+        .then((response) => response.data)
         .then((data) => (this.sermons = data))
     },
     fetchSeries() {
-      fetch('https://api.blazenetworking.com/pcc/v1/series')
-        .then((response) => response.json())
+      axios.get('https://api.blazenetworking.com/pcc/v1/series')
+        .then((response) => response.data)
         .then((data) => (this.series = data))
     },
     fetchSpeakers() {
-      fetch('https://api.blazenetworking.com/pcc/v1/speakers')
-        .then((response) => response.json())
+      axios.get('https://api.blazenetworking.com/pcc/v1/speakers')
+        .then((response) => response.data)
         .then((data) => (this.speakers = data))
     },
     fetchSermonInfo() {
       this.loading = true
       var sermon = this.sermons[this.sermon]
-      fetch('https://api.blazenetworking.com/pcc/v1/sermon/' + sermon)
-        .then((response) => response.json())
+      axios.get('https://api.blazenetworking.com/pcc/v1/sermon/' + sermon)
+        .then((response) => response.data)
         .then(
           (data) => (
             (this.form.date = data.date),
