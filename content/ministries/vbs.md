@@ -5,9 +5,9 @@ slug: vbs
 
 # Vacation Bible School
 
-![VBS Incredible Race](../images/vbs-zoomerang.png)
+![VBS Zoomerang](../images/vbs-zoomerang.png)
 
-**Dates:** Monday, August 1th – Friday, August 5th @ 9am-12pm
+**Dates:** Monday, August 1st – Friday, August 5th @ 9am-12pm
 
 **Location:** Presbyterian Church of Coventry
 
@@ -18,7 +18,7 @@ of VBS).
 
 There is NO registration fee to attend Vacation Bible School.
 
-Here are a couple of things to know before VBS begins:
+Here are a couple of things to know about this year's VBS program:
 
 - Please wear sneakers for recreation.
 - This year we will be taking up a collection for the Caring Families Pregnancy Center in
@@ -30,7 +30,3 @@ Here are a couple of things to know before VBS begins:
 - Parents and siblings are invited to join us for our closing program on Friday, starting at
   11:30. After that please plan to join us for pizza, popsicles, and a time of fellowship.
   There is no charge for the pizza or popsicles.
-
-_To register, please fill out our online form here:_ https://form.jotform.com/221658951981165
-
-Please fill out the registration form by **JULY 20th**.
