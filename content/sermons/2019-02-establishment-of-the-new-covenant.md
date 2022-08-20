@@ -1,6 +1,6 @@
 ---
 title: Establishment of the New Covenant
-date: 2019-02-17T17:31:59.679Z
+date: 2019-02-17
 preacher: bill-clark
 series: union-with-christ
 scripture: Jeremiah 31:23-40

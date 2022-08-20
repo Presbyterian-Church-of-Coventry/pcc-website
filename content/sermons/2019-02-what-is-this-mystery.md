@@ -1,6 +1,6 @@
 ---
 title: What is this Mystery?
-date: 2019-02-24T17:31:59.679Z
+date: 2019-02-24
 preacher: sterling-harmon
 series: union-with-christ
 scripture: Ephesians 3:1-13

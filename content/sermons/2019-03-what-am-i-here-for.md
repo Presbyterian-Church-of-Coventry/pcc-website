@@ -1,6 +1,6 @@
 ---
 title: What Am I Here For?
-date: 2019-03-31T17:31:59.679Z
+date: 2019-03-31
 preacher: bill-clark
 series: union-with-christ
 scripture: Galatians 4:8-20
