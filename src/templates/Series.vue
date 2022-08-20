@@ -25,7 +25,7 @@
           />
         </div>
         <div class="column">
-          <div class="leading-relaxed content" v-html="series.content"></div>
+          <div class="content leading-relaxed" v-html="series.content"></div>
         </div>
       </div>
     </template>
@@ -93,7 +93,7 @@ export default {
       return this.$page.series
     },
     sermons() {
-      return this.$page.series.belongsTo.edges.map((sermon) => {
+      return this.$page.series.belongsTo.edges.map(sermon => {
         return { ...sermon.node }
       })
     },
@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-:deep(img.thumbnail) {
+::v-deep > img.thumbnail {
   background-color: rgba(0, 0, 0, 0.45);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
 }

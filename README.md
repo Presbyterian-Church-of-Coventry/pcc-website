@@ -8,12 +8,8 @@ We're using [Gridsome](https://gridsome.org) and [NetlifyCMS](https://netlifycms
 
 ## Dev
 
-`npm install`
+`yarn serve` (alias for `gridsome develop`)
 
-`npm run dev`
-
-This will spin up a local dev server at `http://localhost:8080`.
-
-To verify everything builds properly, run `npm run build`
+This will spin up a local dev server at `http://localhost:8080`
 
 Happy coding 🎉🙌

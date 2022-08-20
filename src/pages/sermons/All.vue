@@ -17,7 +17,9 @@
           <div slot="no-more" class="mt-2">
             You've scrolled through all the sermons ;)
           </div>
-          <div slot="no-results" class="mt-2">Sorry, no sermons yet :(</div>
+          <div slot="no-results" class="mt-2">
+            Sorry, no sermons yet :(
+          </div>
         </infinite-loading>
       </ClientOnly>
     </template>
@@ -100,7 +102,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-:deep(.pagination) {
+::v-deep > .pagination {
   margin-bottom: 10px;
 }
 </style>

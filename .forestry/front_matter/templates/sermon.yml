@@ -2,34 +2,34 @@
 label: Sermon
 hide_body: true
 fields:
-  - type: text
-    name: title
-    label: title
-  - name: series
-    type: select
-    default: []
-    config:
-      required: false
-      options: []
-      source:
-        type: pages
-        section: sermon-series
-        file:
-        path:
-    label: Series
-    description: Select a sermon series this is related to.
-  - type: text
-    name: preacher
-    label: preacher
-  - type: datetime
-    name: date
-    label: date
-  - type: text
-    name: scripture
-    label: scripture
-  - type: textarea
-    name: audio
-    label: audio
-  - type: text
-    name: video
-    label: video
+- type: text
+  name: title
+  label: title
+- name: series
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: sermon-series
+      file: 
+      path: 
+  label: Series
+  description: Select a sermon series this is related to.
+- type: text
+  name: preacher
+  label: preacher
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: scripture
+  label: scripture
+- type: textarea
+  name: audio
+  label: audio
+- type: text
+  name: video
+  label: video

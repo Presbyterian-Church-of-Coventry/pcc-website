@@ -34,8 +34,8 @@ export default {
   computed: {
     aboutPages() {
       const pages = this.$static.allAboutPage.edges
-        .filter((edge) => edge.node.slug !== 'index')
-        .map((edge) => edge.node)
+        .filter(edge => edge.node.slug !== 'index')
+        .map(edge => edge.node)
       pages.push({
         title: 'Directions',
         path: '/about/directions',

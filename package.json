@@ -4,9 +4,7 @@
   "scripts": {
     "dev": "gridsome develop",
     "build": "gridsome build",
-    "explore": "gridsome explore",
-    "pretty": "prettier --check .",
-    "pretty:write": "prettier --write ."
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
@@ -31,7 +29,6 @@
     "dayjs": "^1.10.4",
     "eslint": "^7.4.0",
     "eslint-plugin-gridsome": "^1.5.0",
-    "prettier": "^2.7.1",
     "sass": "^1.52.3",
     "sass-loader": "^10.2.1",
     "vue-eslint-parser": "^7.1.0",

@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <template slot="title">
-      <h1 class="text-4xl md:text-5xl">Presbyterian Church of Coventry</h1>
+      <h1 class="text-4xl md:text-5xl">
+        Presbyterian Church of Coventry
+      </h1>
       <h2 class="text-xl mt-4 md:mt-0">
         A congregation of The Presbyterian Church in America
       </h2>
@@ -41,7 +43,9 @@
                 height="350"
                 fit="cover"
               />
-              <p class="tracking-wider uppercase">What to Expect at PCC</p>
+              <p class="tracking-wider uppercase">
+                What to Expect at PCC
+              </p>
             </g-link>
           </div>
           <div class="column is-paddingless is-one-half-tablet">

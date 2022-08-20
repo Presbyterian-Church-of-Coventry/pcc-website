@@ -143,7 +143,7 @@ export default {
       return book.toLowerCase().replace(/\ /g, '-')
     },
     sermonCount(book) {
-      return this.passages.filter((passage) =>
+      return this.passages.filter(passage =>
         new RegExp(`^${book}`, 'i').test(passage)
       ).length
     },

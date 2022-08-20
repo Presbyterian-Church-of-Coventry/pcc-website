@@ -12,7 +12,9 @@
       <section
         class="flex flex-col lg:flex-row mt-4 lg:mt-0 justify-end items-center"
       >
-        <h2 class="hidden lg:block text-xl">Subscribe to our Podcast:</h2>
+        <h2 class="hidden lg:block text-xl">
+          Subscribe to our Podcast:
+        </h2>
         <div class="flex lg:block">
           <a
             class="button is-primary is-outlined podcast lg:ml-4"

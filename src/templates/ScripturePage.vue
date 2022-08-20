@@ -47,7 +47,7 @@ export default {
   },
   computed: {
     sermons() {
-      return this.$context.fields.sermons.map((sermon) => sermon.node)
+      return this.$context.fields.sermons.map(sermon => sermon.node)
     },
   },
 }

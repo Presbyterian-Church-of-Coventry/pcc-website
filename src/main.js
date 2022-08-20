@@ -14,24 +14,24 @@ import dayjs from 'dayjs'
 require('typeface-montserrat')
 import '@/assets/theme.scss'
 import '@/assets/main.css'
-import Vuetify from 'vuetify'
+import Vuetify from "vuetify"
 
-export default function (Vue, { router, head, isClient, appOptions }) {
+export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(Buefy)
   Vue.use(InfiniteLoading)
 
   head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
-  })
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+  });
 
   const opts = {
     icons: {
-      iconfont: 'mdi',
-    },
-  }
-  Vue.use(Vuetify)
-  appOptions.vuetify = new Vuetify(opts)
+      iconfont: "mdi",
+    }
+  };
+  Vue.use(Vuetify);
+  appOptions.vuetify = new Vuetify(opts);
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
@@ -40,7 +40,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.component('ChurchIcon', ChurchIcon)
 
   // Scripture Filter
-  Vue.filter('scripture', function (value) {
+  Vue.filter('scripture', function(value) {
     if (value) {
       value = value.toString()
       return `<a href="https://biblia.com/books/esv/${value.replace(
@@ -53,7 +53,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   })
 
   // Date Filter
-  Vue.filter('date', function (value, format) {
+  Vue.filter('date', function(value, format) {
     if (value) {
       if (format) {
         return dayjs(value).format(format)

@@ -2,7 +2,9 @@
   <Layout>
     <template slot="title">
       <h1 class="is-size-1">404 Error</h1>
-      <h2 class="subtitle">Jesus is not here. And neither is your page!</h2>
+      <h2 class="subtitle">
+        Jesus is not here. And neither is your page!
+      </h2>
     </template>
   </Layout>
 </template>

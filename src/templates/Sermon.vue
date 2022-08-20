@@ -112,7 +112,7 @@ export default {
     },
   },
   filters: {
-    formatTime: function (value) {
+    formatTime: function(value) {
       return (
         Math.floor(value / 60) +
         ':' +

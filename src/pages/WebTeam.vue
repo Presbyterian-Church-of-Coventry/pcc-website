@@ -12,7 +12,7 @@
             <div
               class="w-full h-32 bg-blue-600 rounded-t"
               id="cb-background"
-              style="clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%)"
+              style="clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);"
             ></div>
             <h2 class="font-bold font-mono text-3xl">Cody Barr</h2>
             <div>
@@ -50,7 +50,7 @@
             <div
               class="w-full h-32 bg-red-600 fill-current text-blue-100 rounded-t"
               id="am-background"
-              style="clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%)"
+              style="clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);"
             ></div>
             <h2 class="font-bold font-mono text-3xl">Abe Millet</h2>
             <div>

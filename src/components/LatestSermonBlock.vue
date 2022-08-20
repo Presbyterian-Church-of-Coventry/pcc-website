@@ -6,7 +6,9 @@
     <!-- Left side -->
     <div class="flex-none">
       <div class="date">
-        <h3 class="uppercase font-bold tracking-wider">Latest Sermon</h3>
+        <h3 class="uppercase font-bold tracking-wider">
+          Latest Sermon
+        </h3>
         <span
           class="inline-block bg-gray-300 text-gray-800 px-2 text-xs mt-1 font-bold uppercase tracking-wider rounded-full"
           >{{ sermon.date }}</span
@@ -107,7 +109,7 @@ export default {
     sermon() {
       return this.$static.sermons.edges[0].node
     },
-  },
+  }
 }
 </script>
 

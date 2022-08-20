@@ -30,7 +30,9 @@
           <div slot="no-more" class="mt-2">
             You've scrolled through all of the bulletins ;)
           </div>
-          <div slot="no-results" class="mt-2">Sorry, no bulletins yet :(</div>
+          <div slot="no-results" class="mt-2">
+            Sorry, no bulletins yet :(
+          </div>
         </infinite-loading>
       </ClientOnly>
     </div>

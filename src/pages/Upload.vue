@@ -124,7 +124,7 @@
                             hide-details
                             single-line
                             type="number"
-                            style="width: 60px"
+                            style="width: 60px;"
                             @change="$set(form.value, 0, $event), scrubVideo()"
                           ></v-text-field>
                         </template>
@@ -135,7 +135,7 @@
                             hide-details
                             single-line
                             type="number"
-                            style="width: 60px"
+                            style="width: 60px;"
                             @change="$set(form.value, 1, $event), scrubVideo()"
                           ></v-text-field>
                         </template>
@@ -189,7 +189,9 @@
           color="error"
           @click="reFetch()"
         >
-          <v-icon dark> mdi-alert </v-icon>
+          <v-icon dark>
+            mdi-alert
+          </v-icon>
           Server Unavailable - Reload</v-btn
         >
       </div>
@@ -246,25 +248,25 @@ export default {
       this.loading1 = false
     },
     fetchSermons() {
-      axios.get('https://api.blazenetworking.com/pcc/v1/sermons')
-        .then((response) => response.data)
+      fetch('https://api.blazenetworking.com/pcc/v1/sermons')
+        .then((response) => response.json())
         .then((data) => (this.sermons = data))
     },
     fetchSeries() {
-      axios.get('https://api.blazenetworking.com/pcc/v1/series')
-        .then((response) => response.data)
+      fetch('https://api.blazenetworking.com/pcc/v1/series')
+        .then((response) => response.json())
         .then((data) => (this.series = data))
     },
     fetchSpeakers() {
-      axios.get('https://api.blazenetworking.com/pcc/v1/speakers')
-        .then((response) => response.data)
+      fetch('https://api.blazenetworking.com/pcc/v1/speakers')
+        .then((response) => response.json())
         .then((data) => (this.speakers = data))
     },
     fetchSermonInfo() {
       this.loading = true
       var sermon = this.sermons[this.sermon]
-      axios.get('https://api.blazenetworking.com/pcc/v1/sermon/' + sermon)
-        .then((response) => response.data)
+      fetch('https://api.blazenetworking.com/pcc/v1/sermon/' + sermon)
+        .then((response) => response.json())
         .then(
           (data) => (
             (this.form.date = data.date),

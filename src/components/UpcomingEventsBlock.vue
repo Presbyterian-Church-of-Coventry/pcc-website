@@ -68,10 +68,10 @@ export default {
   computed: {
     events() {
       return this.$static.allEvent.edges
-        .filter((edge) => {
+        .filter(edge => {
           return dayjs(edge.node.startDate).isAfter(dayjs())
         })
-        .map((edge) => edge.node)
+        .map(edge => edge.node)
     },
   },
 }
