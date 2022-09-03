@@ -9,7 +9,7 @@
     </button>
     <img
       class="mt-4"
-      src="https://api.netlify.com/api/v1/badges/0b403c8f-5538-4026-b21b-75188f92bf72/deploy-status"
+      src="https://api.netlify.com/api/v1/badges/ca9be520-925d-48ea-8bc4-e09c9d79e34a/deploy-status"
       alt="Deploy status badge"
     />
     <div class="mt-4">
@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -31,13 +33,13 @@ export default {
   },
   methods: {
     updateStatus() {
-      fetch('https://api.blazenetworking.com/pcc/v1/status')
+      axios.get('https://api.blazenetworking.com/pcc/v1/status')
         .then((response) => response.text())
         .then((data) => ((this.status = data), this.imgUrl()))
     },
     async updateBulletins() {
-      const updated = fetch(
-        'https://wt-e912d81343ad4eb04a77abd08cfa41e1-0.sandbox.auth0-extend.com/pcc-update-bulletins'
+      axios.post(
+        'https://api.netlify.com/build_hooks/62ec88a7f3c82a6fd8ad4008'
       )
       alert('Bulletins will be updated now ;)')
 
