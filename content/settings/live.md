@@ -1,5 +1,5 @@
 ---
-date: 9/18/2022
-bulletinLink: https://s3.wasabisys.com/coventrypca.church/bulletins/Bulletin 2022-09-18.pdf
-video: https://www.youtube.com/embed/aizMwVZmO1E
+date: 9/25/2022
+bulletinLink: https://s3.wasabisys.com/coventrypca.church/bulletins/Bulletin 2022-09-25.pdf
+video: https://www.youtube.com/embed/_-Jk-8adsm8
 ---
