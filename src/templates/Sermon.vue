@@ -1,13 +1,11 @@
 <template>
   <Layout>
     <audio
-      autoplay
       ref="audio"
       @timeupdate="currentTime = $event.target.currentTime"
-      @loadedmetadata="duration = $event.target.duration"
-    >
-      <source :src="$page.sermon.audio" type="audio/mp3" />
-    </audio>
+      @loadedmetadata="loadedMetadata($event)"
+      :src="$page.sermon.audio"
+    />
 
     <div class="full-height">
       <article id="audio-card">
@@ -64,13 +62,31 @@ export default {
   data() {
     return {
       audioPlayer: undefined,
-      playing: true,
+      playing: false,
       duration: 0,
       currentTime: 0,
     }
   },
   mounted() {
     this.audioPlayer = this.$refs.audio
+    let startPlayPromise = this.audioPlayer.play();
+    if (startPlayPromise !== undefined) {
+      startPlayPromise
+        .then(() => {
+          this.playing = true
+        })
+        .catch((error) => {
+          console.log(error)
+          this.playing = false
+        });
+    }
+  },
+  created() {
+    window.addEventListener('keydown', (e) => {
+      if (e.key == ' ') { 
+        this.togglePlay()
+      }
+    })
   },
   components: {
     Layout,
@@ -87,6 +103,9 @@ export default {
         (e.target.value * this.duration) / 100
       )
     },
+    loadedMetadata(e) {
+      this.duration = e.target.duration
+    }
   },
   computed: {
     sermon() {
