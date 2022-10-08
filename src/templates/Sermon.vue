@@ -80,13 +80,12 @@ export default {
           this.playing = false
         });
     }
-  },
-  created() {
     window.addEventListener('keydown', (e) => {
       if (e.key == ' ') { 
         this.togglePlay()
       }
     })
+
   },
   components: {
     Layout,
