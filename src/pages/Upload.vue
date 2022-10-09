@@ -91,6 +91,14 @@
             maxlength="14"
             color="light-grey"
           ></v-text-field>
+          <v-text-field
+            label="Livestream ID"
+            v-model="form.videoId"
+            :rules="[(v) => !!v || 'This field is required']"
+            outlined
+            dense
+            color="light-grey"
+          ></v-text-field>
           <div v-if="form.videoId">
             <h1 class="font-bold my-4">
               Select the portion of the livestream which is the sermon:
