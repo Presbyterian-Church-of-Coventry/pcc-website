@@ -31,16 +31,6 @@ An M.Div student at Knox Theological Seminary, Mark spends his time with his wif
 
 Originally from New York City, Hannah began attending PCC in 2016 when she moved for work as a RUF intern at UConn. After serving in college ministry for three years, she moved to St. Louis, Missouri to pursue a Masters of Divinity and of Arts in Counseling at Covenant Theological Seminary. With one year of seminary under her belt, she returned to Connecticut in 2020 to serve as a summer ministry intern at PCC. Resuming her degrees online, she continues to invest in her church community, fostering friendships and encouraging life-on-life relationships. She is married to Andrew Sung and often dreams of owning a Welsh Corgi named Toast.
 
-# Bill Glenister
-
-## Music Director
-
-![Bill Glenister](../images/billglenister.jpg)
-
-Bill Glenister has served as choir director at the Presbyterian Church of Coventry for more than 30 years. Along with his wife Barbara – who is the chief accompanist, Bill has directed choir, arranged music for and directed the church orchestra, and been involved in selecting hymns for the weekly services.
-
-All of Bill’s learning experiences regarding church music have been gained during his years of service in Coventry. His other musical accomplishments include serving as Assistant Director of the Laurel Music Camp for 12+ years, performing as a member of the a cappella chorus Take Note!, and directing a Barbershop Chorus in Nevada. Bill is a graduate of the Berklee School of Music with a diploma for Instrumental Performance. In addition to his wife Barbara, all six of their children – who are now adults, have participated in the church's choir. Bill and Barbara reside in North Windham, Connecticut.
-
 # Danielle Bolliger
 
 ## Church Secretary
