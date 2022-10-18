@@ -11,19 +11,6 @@ slug: our-leaders
 
 John William (Will) Snyder began his ministry as Senior Pastor at the Presbyterian Church of Coventry in January 2019. Previously, he served as Senior Pastor of the Forks of the Brandywine Presbyterian Church (EPC) from 2010 -2018, following his service as pastor of an independent reformed church in southern Michigan from 2005-2010. A native of the northwest, (Kent, WA) Will received a BA from Western Washington University. Afterward, he moved with his family to Florida where he earned a Masters’ in Divinity at Reformed Theological Seminary (Orlando). During his first pastorate he began further studies at Reformed Presbyterian Theological Seminary in Pittsburgh, PA, where he earned his Doctor of Ministry degree in 2015. Will and his wife Shelley, along with their children Natalie, Alivia, and Pierson live in Vernon, CT
 
-# Lucas Dourado
-
-## RUF Pastor
-
-![Lucas Dourado](../images/lucas.jpg)
-
-Lucas has served as campus minister with RUF at UConn since the Fall of 2011. He is an ordained Presbyterian (PCA) minister. He grew up in New Jersey and is a graduate of Wake Forest University (2006) and Covenant Theological Seminary (2011).
-
-Having been involved in RUF while in college, and having served as a ministry intern after graduation, Lucas credits RUF with having been a huge part of his life since he was first introduced to it. Lucas married his beautiful wife Maggie in March 2012. She is from South Carolina and was also very involved in RUF during college. When on campus, Lucas can be found meeting with students, leading small groups, studying, and teaching. When away from campus, he spends time enjoying music, sports, books, and the beautiful scenery of Northeastern Connecticut.
-
-Lucas and Maggie have two children: Margot and Asher.
-Lucas’ Contact Info: lucas.dourado@ruf.org, (336) 287-4627
-
 # Mark Popovitch
 
 ## Ministry Assistant
