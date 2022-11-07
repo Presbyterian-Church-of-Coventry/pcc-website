@@ -45,7 +45,7 @@ Danielle has been a member of PCC since 2010. She became the Church Administrato
 
 ![Benjamin Bassett](../images/benbassett.jpg)
 
-Ben Bassett has been a member of PCC since 2015, and is currently 16 years old. He undertook the position of media coordinator in July of 2021, and has been enjoying the various challenges it presents him with and the service he has been able to provide. He resides in Tolland CT with his parents and three sisters on a homestead, where they keep alpacas, bees, chickens, and occasionally pigs. Ben enjoys reading, programming, running, and learning new things. He is homeschooled through Classical Conversations, where he particularly delights in debate, literature, and math. A verse which continually encourages Ben is Romans 8:28: _And we know that for those who love God all things work together for good, for those who are called according to His purpose._
+Ben Bassett has been a member of PCC since 2015, and is currently 17 years old. He undertook the position of media coordinator in July of 2021, and has been enjoying the various challenges it presents him with and the service he has been able to provide. He resides in Tolland CT with his parents and three sisters on a homestead, where they keep alpacas, bees, chickens, and occasionally pigs. Ben enjoys reading, programming, running, and learning new things. He is homeschooled through Classical Conversations, where he particularly delights in debate, literature, and math. A verse which continually encourages Ben is Romans 8:28: _And we know that for those who love God all things work together for good, for those who are called according to His purpose._
 
 # Elders
 
