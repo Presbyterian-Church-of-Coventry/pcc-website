@@ -1,6 +1,6 @@
 ---
 title: Christmas Pageant
-thumbnail: /content/images/christmas-pageant.jpg
+thumbnail: ../images/christmas-pageant.jpg
 startDate: 2022-12-17T00:00:05.017Z
 endDate: 2022-12-17T02:00:00.000Z
 ---
