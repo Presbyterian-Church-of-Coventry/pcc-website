@@ -1,5 +1,6 @@
 ---
 title: Questions for God
+series: habakkuk
 preacher: will-snyder
 date: 2022-01-30
 scripture: Habakkuk 1:12-2:4

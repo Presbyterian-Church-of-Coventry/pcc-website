@@ -1,5 +1,6 @@
 ---
 title: When God’s Ways Do Not Make Sense
+series: habakkuk
 preacher: will-snyder
 date: 2022-01-23
 scripture: Habakkuk 1:1-11

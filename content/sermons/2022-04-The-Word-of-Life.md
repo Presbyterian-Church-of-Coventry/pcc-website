@@ -1,5 +1,6 @@
 ---
 title: The Word of Life
+series: johns
 preacher: will-snyder
 date: 2022-04-24
 scripture: 1 John 1:1-4

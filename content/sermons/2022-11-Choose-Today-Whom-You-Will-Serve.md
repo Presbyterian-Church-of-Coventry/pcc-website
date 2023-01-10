@@ -1,5 +1,6 @@
 ---
 title: Choose Today Whom You Will Serve
+series: daniel
 preacher: will-snyder
 date: 2022-11-20
 scripture: Daniel 3:1-18

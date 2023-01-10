@@ -1,5 +1,6 @@
 ---
 title: An Uncompromising Faith
+series: daniel
 preacher: will-snyder
 date: 2022-10-30
 scripture: Daniel 1:8-21

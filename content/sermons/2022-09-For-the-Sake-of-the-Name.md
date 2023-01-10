@@ -1,5 +1,6 @@
 ---
 title: For the Sake of the Name
+series: johns
 preacher: will-snyder
 date: 2022-09-25
 scripture: 3 John 1:1-15

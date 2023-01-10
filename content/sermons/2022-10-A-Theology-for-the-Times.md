@@ -1,5 +1,6 @@
 ---
 title: A Theology for the Times
+series: daniel
 preacher: will-snyder
 date: 2022-10-23
 scripture: Daniel 1:1-7

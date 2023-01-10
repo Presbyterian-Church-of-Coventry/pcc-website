@@ -1,5 +1,6 @@
 ---
 title: The Righteous Shall Live by Faith
+series: habakkuk
 preacher: will-snyder
 date: 2022-02-06
 scripture: Habakkuk 2:1-4

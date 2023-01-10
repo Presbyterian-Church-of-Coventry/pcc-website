@@ -1,5 +1,6 @@
 ---
 title: The Wisdom and Power of God
+series: daniel
 preacher: will-snyder
 date: 2022-11-06
 scripture: Daniel 2:1-23

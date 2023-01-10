@@ -1,5 +1,6 @@
 ---
 title: Christians and Antichrists
+series: johns
 preacher: will-snyder
 date: 2022-06-05
 scripture: 1 John 2:18-29

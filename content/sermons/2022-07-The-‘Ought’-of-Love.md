@@ -1,5 +1,6 @@
 ---
 title: The ‘Ought’ of Love
+series: johns
 preacher: will-snyder
 date: 2022-07-31
 scripture: 1 John 4:7-11

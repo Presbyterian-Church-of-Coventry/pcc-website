@@ -1,5 +1,6 @@
 ---
 title: Victory in Jesus
+series: johns
 preacher: will-snyder
 date: 2022-08-14
 scripture: 1 John 5:1-5

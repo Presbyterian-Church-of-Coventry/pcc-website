@@ -1,5 +1,6 @@
 ---
 title: True Help for the Path of Faith
+series: johns
 preacher: will-snyder
 date: 2022-05-08
 scripture: 1 John 2:1-6

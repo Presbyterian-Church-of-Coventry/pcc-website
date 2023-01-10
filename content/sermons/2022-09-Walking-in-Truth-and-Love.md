@@ -1,5 +1,6 @@
 ---
 title: Walking in Truth and Love
+series: johns
 preacher: will-snyder
 date: 2022-09-18
 scripture: 2 John 1-13
