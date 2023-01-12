@@ -20,7 +20,7 @@
         <ChurchIcon name="twitter" size="10" />
       </a>
       <a
-        href="https://www.youtube.com/user/PCACoventry"
+        href="https://www.youtube.com/@CoventryPCA"
         target="_blank"
         rel="noreferrer"
         aria-label="youtube"
@@ -30,7 +30,7 @@
       </a>
     </div>
     <p class="mt-4">
-      © 2019
+      © {{ new Date().getFullYear() }}
       <a href="https://coventrypca.church">Presbyterian Church of Coventry</a>
       All Rights Reserved
     </p>
@@ -40,8 +40,8 @@
         target="_blank"
         rel="noreferrer"
         >55 Trowbridge Road, Coventry, CT 06238</a
-      >
-      | 860-742-7222 |
+      > | 
+      <a href="tel:860-742-7222">860-742-7222</a> |
       <a href="mailto:office@coventrypca.church">office@coventrypca.church</a>
     </p>
     <p>
