@@ -40,7 +40,7 @@ export default {
         .map(edge => edge.node)
 
       let order = [
-        'Music',
+        // 'Music',
         'Adult',
         'RUF at UCONN',
         'Young Adults',
