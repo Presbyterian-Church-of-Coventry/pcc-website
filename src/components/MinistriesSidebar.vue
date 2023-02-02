@@ -41,6 +41,8 @@ export default {
 
       let order = [
         // 'Music',
+        'Discipleship',
+        'Shepherdng',
         'Adult',
         'RUF at UCONN',
         'Young Adults',
