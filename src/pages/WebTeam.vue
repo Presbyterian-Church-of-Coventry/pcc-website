@@ -123,6 +123,11 @@
             </p>
           </div>
         </div>
+        <a class="p-2 mt-4 w-screen text-2xl hover:underline flex flex-inline justify-center items-center" href="https://github.com/Presbyterian-Church-of-Coventry" target="_blank">
+          See our work on
+          <ChurchIcon name="github" class="ml-1" size="12"/>
+          !
+        </a>
       </div>
     </div>
   </Layout>
