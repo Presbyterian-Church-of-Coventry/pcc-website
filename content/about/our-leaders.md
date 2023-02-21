@@ -11,18 +11,6 @@ slug: our-leaders
 
 John William (Will) Snyder began his ministry as Senior Pastor at the Presbyterian Church of Coventry in January 2019. Previously, he served as Senior Pastor of the Forks of the Brandywine Presbyterian Church (EPC) from 2010 -2018, following his service as pastor of an independent reformed church in southern Michigan from 2005-2010. A native of the northwest, (Kent, WA) Will received a BA from Western Washington University. Afterward, he moved with his family to Florida where he earned a Masters’ in Divinity at Reformed Theological Seminary (Orlando). During his first pastorate he began further studies at Reformed Presbyterian Theological Seminary in Pittsburgh, PA, where he earned his Doctor of Ministry degree in 2015. Will and his wife Shelley, along with their children Natalie, Alivia, and Pierson live in Vernon, CT
 
-# Mark Popovitch
-
-## Ministry Assistant
-
-![Mark Popovitch](../images/mark.jpg)
-
-Born and raised in Connecticut, Mark Popovitch has been attending PCC since 1997, after growing up Roman Catholic, and then attending Avery Street Christian Reformed Church in South Windsor. Mark considers himself to have “grown up” at PCC, having attended high school Sunday School classes and Youth Group as a teenager; the church has been very influential in molding him after the Savior she preaches faithfully each week.
-
-Mark has served in a variety of roles at PCC through the years (“anywhere I have the ability to help out I try to”)—roles such as VBS co-director, Pioneer Club, Senior Pastor Search Committee, Sunday School teacher, Newsletter editor, church supply purchaser, and recently as the Ministry Assistant, charged with oversight of the Sunday Evening Worship Service and various other aspects of church ministry.
-
-An M.Div student at Knox Theological Seminary, Mark spends his time with his wife (Amber) and their three children (Natasha, Anton, and Chessa). Mark likes to read and write, enjoys baseball (he is a “retired” baseball umpire who roots avidly for the New York Yankees), and taking hikes on local trails. He’s also been known for his comedic flare, co-starring in a stage play for Mapleton Hall in Suffield, CT.
-
 # Hannah Moon Sung
 
 ## Women's Discipleship Coordinator
