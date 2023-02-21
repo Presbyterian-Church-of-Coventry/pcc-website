@@ -1,8 +1,8 @@
 ---
 title: Midweek Recharge
 thumbnail: ../images/battery_charging.png
-startDate: 2023-02-08T23:00:00.000Z
-endDate: 2023-02-09T01:00:00.000Z
+startDate: 2023-02-22T23:00:00.000Z
+endDate: 2023-02-23T01:00:00.000Z
 ---
 We are heading into Year 2 of the revamped Midweek Recharge ministry! From 6:00-7:00 PM food will be provided and individuals and families may come at any time during that hour to eat and spend time together. Beginning at 7:00 PM the focus will shift to a time of prayer, facilitated by an Elder, Pastor, or other servant-leader in the church. This is an opportunity for prayer, fellowship, and to invite others outside of PCC to come and enjoy a meal and spend time together.
 
