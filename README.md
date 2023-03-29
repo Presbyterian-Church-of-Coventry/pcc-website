@@ -6,18 +6,42 @@ This is the repo for the Presbyterian Church of Coventry's 2019 website redesign
 
 This project uses [Gridsome](https://gridsome.org) and [NetlifyCMS](https://netlifycms.com).
 
-## Dev
+# Develop
 
-Clone this repository (`git clone https://github.com/Presbyterian-Church-of-Coventry/pcc-website.git`)
+Clone and open this repository
 
-`cd pcc-website`
+```sh
+git clone https://github.com/Presbyterian-Church-of-Coventry/pcc-website.git
+cd pcc-website
+```
 
-Run `npm install`
+Install all the necessary packages 
 
-Write some code!
+```sh
+npm install
+```
 
-Run `npm run dev` to spin up a local dev server at `http://localhost:8080`
+Then write some code!
 
-Test everything with `npm run generate` before committing.
+<br/>
+<br/>
+
+To test your changes, you can spin up a local dev server at `http://localhost:8080` by running
+
+```sh
+npm run dev
+```
+
+Before comitting, test to make sure everything builds fine with:
+
+```sh
+npm run generate
+```
 
 Happy coding! 🎉
+
+# Structure
+
+As most Vue/Gridsome projects, all the individal webpages live in `src/pages/`, with supporting components and data in the `src/` directory.
+
+However, all the changable data the site displays lives in `content/` as markdown files that are manipulated by Netlify's CMS page. Changing any displayed data should be done here, while any aesthetic/webpage changes should be made in `src/`.
