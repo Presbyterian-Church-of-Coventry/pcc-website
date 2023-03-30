@@ -91,6 +91,24 @@
             maxlength="14"
             color="light-grey"
           ></v-text-field>
+          <v-checkbox
+            class="mt-0 pt-0"
+            color="red"
+            v-model="form.youtube"
+            label="Youtube"
+          ></v-checkbox>
+          <v-checkbox
+            class="mt-0 pt-0"
+            color="grey"
+            v-model="form.sermonAudio"
+            label="SermonAudio"
+          ></v-checkbox>
+          <v-checkbox
+            class="mt-0 pt-0"
+            color="black"
+            v-model="form.website"
+            label="Website"
+          ></v-checkbox>
           <v-text-field
             label="Livestream ID"
             v-model="form.videoId"
@@ -132,7 +150,7 @@
                             hide-details
                             single-line
                             type="number"
-                            style="width: 60px;"
+                            style="width: 60px"
                             @change="$set(form.value, 0, $event), scrubVideo()"
                           ></v-text-field>
                         </template>
@@ -143,7 +161,7 @@
                             hide-details
                             single-line
                             type="number"
-                            style="width: 60px;"
+                            style="width: 60px"
                             @change="$set(form.value, 1, $event), scrubVideo()"
                           ></v-text-field>
                         </template>
@@ -197,9 +215,7 @@
           color="error"
           @click="reFetch()"
         >
-          <v-icon dark>
-            mdi-alert
-          </v-icon>
+          <v-icon dark> mdi-alert </v-icon>
           Server Unavailable - Reload</v-btn
         >
       </div>
@@ -225,6 +241,9 @@ export default {
         speaker: null,
         series: null,
         API_Key: this.$route.query.api_key,
+        youtube: true,
+        sermonAudio: true,
+        website: true,
         value: [0, 1],
         videoId: null,
       },
@@ -256,24 +275,28 @@ export default {
       this.loading1 = false
     },
     fetchSermons() {
-      axios.get('https://api.blazenetworking.com/pcc/v1/sermons')
+      axios
+        .get('https://api.blazenetworking.com/pcc/v1/sermons')
         .then((response) => response.data)
         .then((data) => (this.sermons = data))
     },
     fetchSeries() {
-      axios.get('https://api.blazenetworking.com/pcc/v1/series')
+      axios
+        .get('https://api.blazenetworking.com/pcc/v1/series')
         .then((response) => response.data)
         .then((data) => (this.series = data))
     },
     fetchSpeakers() {
-      axios.get('https://api.blazenetworking.com/pcc/v1/speakers')
+      axios
+        .get('https://api.blazenetworking.com/pcc/v1/speakers')
         .then((response) => response.data)
         .then((data) => (this.speakers = data))
     },
     fetchSermonInfo() {
       this.loading = true
       var sermon = this.sermons[this.sermon]
-      axios.get('https://api.blazenetworking.com/pcc/v1/sermon/' + sermon)
+      axios
+        .get('https://api.blazenetworking.com/pcc/v1/sermon/' + sermon)
         .then((response) => response.data)
         .then(
           (data) => (
