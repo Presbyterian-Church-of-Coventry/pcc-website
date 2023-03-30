@@ -59,6 +59,9 @@
             <g-link class="navbar-item" to="/resources/recommended-books"
               >Recommended Books</g-link
             >
+            <g-link class="navbar-item" to="/directory"
+              >Directory</g-link
+            >
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
