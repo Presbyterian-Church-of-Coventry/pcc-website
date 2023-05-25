@@ -23,17 +23,19 @@
 <script>
 import Layout from '@/layouts/Page.vue'
 
-// iframe sizing
-window.onmessage = (e) => {
-  const n = document.getElementById('v-frame')
-  'https://secure.myvanco.com' === e.origin &&
-    e.data.height &&
-    ((n.height = e.data.height), (n.overflow = 'hidden'))
-}
 
 export default {
   components: {
     Layout,
   },
+  mounted () {
+    // iframe sizing
+    window.onmessage = (e) => {
+      const n = document.getElementById('v-frame')
+      'https://secure.myvanco.com' === e.origin &&
+        e.data.height &&
+        ((n.height = e.data.height), (n.overflow = 'hidden'))
+    }
+  }
 }
 </script>
