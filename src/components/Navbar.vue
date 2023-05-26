@@ -82,6 +82,9 @@
             >
           </div>
         </div>
+        <g-link class="navbar-item" to="/giving" exactActiveClass="is-active"
+          >Giving</g-link
+        >
       </div>
     </div>
   </nav>
