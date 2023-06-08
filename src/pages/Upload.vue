@@ -311,7 +311,7 @@ export default {
         .catch(
           (error) => (
             (console.log(error)),
-            (this.form.data = sermon),
+            (this.form.date = sermon),
             (this.loading = false)
           )
         )
