@@ -308,6 +308,13 @@ export default {
             (this.uploaded = data.uploaded)((this.loading = false))
           )
         )
+        .catch(
+          (error) => (
+            (console.log(error)),
+            (this.form.data = sermon),
+            (this.loading = false)
+          )
+        )
     },
     async refreshAPI() {
       this.loading2 = true
