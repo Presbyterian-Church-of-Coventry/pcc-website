@@ -1,8 +1,8 @@
 ---
 title: Backyard Fellowship
-thumbnail: '../images/bbq.jpg'
-startDate: 2019-07-07T21:30:00.000Z
-endDate: 2019-07-07T23:30:00.000Z
+thumbnail: ../images/bbq.jpg
+startDate: 2023-07-02T21:30:00.000Z
+endDate: 2023-07-02T23:30:00.000Z
 ---
 
 During the months of July and August, we will have Backyard Fellowships in place of our regular Sunday evening service. We will gather at 5:30 PM at a host home for a time of food & fellowship, devotion, singing and prayer.
