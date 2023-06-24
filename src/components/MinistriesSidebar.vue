@@ -48,7 +48,7 @@ export default {
         'Young Adults',
         'Youth',
         "Children's Ministry",
-        // 'Vacation Bible School',
+        'Vacation Bible School',
       ]
 
       return pages.sort((a, b) => {
