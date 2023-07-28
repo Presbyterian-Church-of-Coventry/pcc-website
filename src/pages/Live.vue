@@ -13,7 +13,7 @@
           <iframe
             width="560"
             height="315"
-            :src="$static.livePage.video"
+            :src="'https://www.youtube.com/embed/' + this.liveId"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -36,16 +36,28 @@ query {
 <script>
 import Layout from '@/layouts/Page.vue'
 import LiveSidebar from '@/components/LiveSidebar.vue'
+import axios from 'axios'
 export default {
   metaInfo() {
     return {
       title: 'Live',
     }
   },
+  data() {
+    return {
+      liveId: ""
+    }
+  },
   components: {
     Layout,
     LiveSidebar,
   },
+  created() {
+    axios
+      .get('https://www.googleapis.com/youtube/v3/search?part=id&channelId=UCWBBCEZhrflUkf5vldDlntg&eventType=upcoming&type=video&key=AIzaSyCx-6Uh-0YMG6GIEXxBAwafacNsmJODT_s')
+      .then((response) => response.data)
+      .then((data) => (this.liveId = data["items"][0]["id"]["videoId"]))
+  }
 }
 </script>
 

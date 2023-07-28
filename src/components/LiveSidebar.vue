@@ -1,12 +1,20 @@
 <template>
   <aside class="flex-none menu">
-    <p class="menu-label">Links for {{ $static.livePage.date }}</p>
+    <p class="menu-label">Links for {{ this.date }}</p>
     <ul class="menu-list">
       <li>
         <ul>
-          <li>
+          <li v-if="exists">
             <a
-              :href="$static.livePage.bulletinLink"
+              :href="this.link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Bulletin &amp; Sermon Outline</a
+            >
+          </li>
+          <li v-else>
+            <a
+              style="cursor: not-allowed"
               target="_blank"
               rel="noreferrer noopener"
               >Bulletin &amp; Sermon Outline</a
@@ -30,17 +38,37 @@
   </aside>
 </template>
 
-<static-query>
-query {
-  livePage: settings (path: "/content/settings/live") {
-    date
-    bulletinLink
+<script>
+import axios from 'axios'
+export default {
+  data() {
+    return {
+      date: "",
+      link: "",
+      exists: false
+    }
+  },
+  created() {
+    let now = new Date()
+    now.setDate(now.getDate() + (7-now.getDay()) % 7)
+    let month = now.getMonth() + 1
+    let day = now.getDate()
+    let year = now.getFullYear()
+    this.date = month + "/" + day + "/" + year
+    if (month < 10) {
+      month = "0" + month
+    }
+    if (day < 10) {
+      day = "0" + day
+    }
+    this.link = "https://s3.wasabisys.com/coventrypca.church/bulletins/Bulletin " + year + "-" + month + "-" + day + ".pdfa"
+
+    axios
+      .get(this.link)
+      .then((response) => response.status)
+      .then((data) => (this.exists = (data == 200)))
   }
 }
-</static-query>
-
-<script>
-export default {}
 </script>
 
 <style lang="scss">
