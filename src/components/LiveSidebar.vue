@@ -61,7 +61,7 @@ export default {
     if (day < 10) {
       day = "0" + day
     }
-    this.link = "https://s3.wasabisys.com/coventrypca.church/bulletins/Bulletin " + year + "-" + month + "-" + day + ".pdfa"
+    this.link = "https://s3.wasabisys.com/coventrypca.church/bulletins/Bulletin " + year + "-" + month + "-" + day + ".pdf"
 
     axios
       .get(this.link)
