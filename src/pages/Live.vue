@@ -54,7 +54,7 @@ export default {
   },
   created() {
     axios
-      .get('https://www.googleapis.com/youtube/v3/search?part=id&channelId=UCWBBCEZhrflUkf5vldDlntg&eventType=upcoming&type=video&key=AIzaSyCx-6Uh-0YMG6GIEXxBAwafacNsmJODT_s')
+      .get('https://www.googleapis.com/youtube/v3/search?part=id&channelId=UCWBBCEZhrflUkf5vldDlntg&eventType=upcoming&type=video&key=AIzaSyCZnIKK8HMObuVZuOjJAvaiv1ij-xNRyp8')
       .then((response) => response.data)
       .then((data) => (this.liveId = data["items"][0]["id"]["videoId"]))
   }
