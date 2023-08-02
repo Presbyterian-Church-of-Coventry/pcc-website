@@ -11,13 +11,13 @@ slug: our-leaders
 
 John William (Will) Snyder began his ministry as Senior Pastor at the Presbyterian Church of Coventry in January 2019. Previously, he served as Senior Pastor of the Forks of the Brandywine Presbyterian Church (EPC) from 2010 -2018, following his service as pastor of an independent reformed church in southern Michigan from 2005-2010. A native of the northwest, (Kent, WA) Will received a BA from Western Washington University. Afterward, he moved with his family to Florida where he earned a Masters’ in Divinity at Reformed Theological Seminary (Orlando). During his first pastorate he began further studies at Reformed Presbyterian Theological Seminary in Pittsburgh, PA, where he earned his Doctor of Ministry degree in 2015. Will and his wife Shelley, along with their children Natalie, Alivia, and Pierson live in Vernon, CT
 
-# Hannah Moon Sung
+# David Augustine
 
-## Women's Discipleship Coordinator
+## RUF Pastor
 
-![Hannah Moon Sung](../images/hannahmoonsung.jpg)
+![David Augustine](../images/david.jpeg)
 
-Originally from New York City, Hannah began attending PCC in 2016 when she moved for work as a RUF intern at UConn. After serving in college ministry for three years, she moved to St. Louis, Missouri to pursue a Masters of Divinity and of Arts in Counseling at Covenant Theological Seminary. With one year of seminary under her belt, she returned to Connecticut in 2020 to serve as a summer ministry intern at PCC. Resuming her degrees online, she continues to invest in her church community, fostering friendships and encouraging life-on-life relationships. She is married to Andrew Sung and often dreams of owning a Welsh Corgi named Toast.
+David Augustine began as the RUF campus associate for UCONN in June 2023. David was a member of RUF at the University of Pittsburgh where he graduated with a bachelor’s degree in neuroscience in 2018. After working for one year as a research laboratory technician he moved to St Louis to attend Covenant Theological Seminary, graduating in 2022 with an MDiv. While in St Louis he was a ministry intern at South City Church where he helped teach adult Sunday School and co-led the youth group. He then worked as interim campus associate for RUF at Indiana University of Pennsylvania for the ’22-’23 school year. He enjoys spending time outdoors, reading, and getting competitive over just about anything.
 
 # Danielle Bolliger
 
@@ -41,4 +41,4 @@ Armand Chenelle, Doug Fox, Sterling Harmon Jr., Richard Jones, John Sundet, Scot
 
 # Deacons
 
-Peter Benedict, Scott Bolliger, Howard Craig, Jeff Edwards, Walter Mayo, and David Embree. Deacon Emeritus: Mark Franson, Randy Hershberger.
+Peter Benedict, Scott Bolliger, Howard Craig, Jeff Edwards, Walter Mayo, and David Embree. Deacon Emeritus: Mark Franson, Randy Hershberger
