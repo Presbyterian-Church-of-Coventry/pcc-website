@@ -27,14 +27,6 @@ David Augustine began as the RUF campus associate for UCONN in June 2023. David 
 
 Danielle has been a member of PCC since 2010. She became the Church Administrator in May of 2017. Danielle has been married to Deacon Scott Bolliger since 1984. They live in Tolland with their two children, Hannah and Evan, and one dog – their rescue, Abby. Danielle enjoys spending time with her family, hiking, riding bikes, or venturing into Boston for a Red Sox game. A favorite Bible verse: _Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand._ Isaiah 41:10
 
-# Benjamin Bassett
-
-## Media Coordinator
-
-![Benjamin Bassett](../images/benbassett.jpg)
-
-Ben Bassett has been a member of PCC since 2015, and is currently 17 years old. He undertook the position of media coordinator in July of 2021, and has been enjoying the various challenges it presents him with and the service he has been able to provide. He resides in Tolland CT with his parents and three sisters on a homestead, where they keep alpacas, bees, chickens, and occasionally pigs. Ben enjoys reading, programming, running, and learning new things. He is homeschooled through Classical Conversations, where he particularly delights in debate, literature, and math. A verse which continually encourages Ben is Romans 8:28: _And we know that for those who love God all things work together for good, for those who are called according to His purpose._
-
 # Elders
 
 Armand Chenelle, Doug Fox, Sterling Harmon Jr., Richard Jones, John Sundet, Scott Warren, Brian Wilson
