@@ -1,6 +1,6 @@
 ---
 title: Toward Joyful Maturity, Through Trials
-series: james-2023
+series: james
 preacher: will-snyder
 date: 2023-04-30
 scripture: James 1:1-4
