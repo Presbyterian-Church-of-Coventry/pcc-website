@@ -1,3 +1,3 @@
 ---
-series: thessalonians
+series: james
 ---
