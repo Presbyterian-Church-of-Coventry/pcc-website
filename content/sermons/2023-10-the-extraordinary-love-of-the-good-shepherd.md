@@ -1,10 +1,9 @@
 ---
-title: The Extraordinary Love of the Good Shepherd
-series: iamstatements
+title: Seeing and Serving the King - Ordination Service of David Augustine
 preacher: will-snyder
-date: 2023-10-23
-scripture: John 10:10-21
-audio: https://s3.us-east-1.wasabisys.com/coventrypca.church/sermons/2023.10.22A%20The%20Extraordinary%20Love%20of%20the%20Good%20Shepherd%20-%20Will%20Snyder.mp3
-video: https://youtu.be/h97nWuRZZu0
+date: 2023-10-22
+scripture: Mark 6
+audio: https://s3.us-east-1.wasabisys.com/coventrypca.church/sermons/2023.10.22A%20Ordination%20Service%20of%20David%20Augustine%20-%20Derek%20Bates.mp3
+video: https://www.youtube.com/watch?v=yVDapQCzINM
 ---
-J﻿ohn 10:10-21
+M﻿ark 6
