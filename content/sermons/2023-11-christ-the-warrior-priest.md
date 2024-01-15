@@ -1,5 +1,6 @@
 ---
 title: Christ the Warrior-Priest
+series: advent_psalms
 preacher: will-snyder
 date: 2023-11-26
 scripture: Psalm 110
