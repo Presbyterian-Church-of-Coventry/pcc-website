@@ -1,5 +1,6 @@
 ---
 title: Christ the Lord
+series: advent_psalms
 preacher: will-snyder
 date: 2023-12-10
 scripture: Psalm 72
