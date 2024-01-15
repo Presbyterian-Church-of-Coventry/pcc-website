@@ -1,5 +1,6 @@
 ---
 title: The Majesty of the Lord
+series: advent_psalms
 preacher: will-snyder
 date: 2023-12-24
 scripture: Psalm 8
