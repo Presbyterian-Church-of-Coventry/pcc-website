@@ -1,5 +1,6 @@
 ---
 title: Return to Me
+series: zechariah
 preacher: will-snyder
 date: 2024-01-14
 scripture: Zechariah 1:1-6
