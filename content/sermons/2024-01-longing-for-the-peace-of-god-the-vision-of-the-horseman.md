@@ -1,5 +1,5 @@
 ---
-title: "Longing for the Peace of God: the vision of the horseman"
+title: "Longing for the Peace of God: the Vision of the Horseman"
 series: zechariah
 preacher: will-snyder
 date: 2024-01-21
