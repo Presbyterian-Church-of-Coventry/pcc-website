@@ -29,15 +29,15 @@
     </div>
     <div v-else>
       <h4 class="is-size-4 has-text-centered">
-        <em>No Upcoming Featured Events</em>
-        <br />
+        <!-- <em>No Upcoming Featured Events</em> -->
+        <!-- <br /> -->
         <a
           class="button is-primary is-outlined calendar-feed mt-4"
           target="_blank"
           href="https://calendar.google.com/calendar/embed?src=office%40coventrypca.church&ctz=America%2FNew_York"
         >
           <ChurchIcon name="calendar" />
-          <span class="ml-2">View Full Calendar</span>
+          <span class="ml-2">View Calendar</span>
         </a>
       </h4>
     </div>
