@@ -9,7 +9,7 @@ slug: vbs
 
 **Dates:** Monday, July 29th – Friday, August 2nd, 9am-12pm
 
-**Location:** Presbyterian Church of Coventry
+**Location:** Presbyterian Church of Coventry - 55 Trowbridge Rd, Coventry CT 06238
 
 Please join The Presbyterian Church of Coventry for this week of fun featuring Bible lessons, crafts, games, music, and snacks!
 
