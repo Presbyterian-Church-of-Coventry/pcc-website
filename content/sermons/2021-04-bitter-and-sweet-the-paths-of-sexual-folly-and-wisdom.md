@@ -5,5 +5,4 @@ preacher: will-snyder
 date: 2021-04-18
 scripture: Proverbs 5:1-23
 audio: https://drive.google.com/file/d/1NJZ9klj7rxiAl6Pz3NphGzUCi-L25XjI/view
-  Sweet - The Paths of Sexual Folly and Wisdom - Will Snyder.mp3
 ---

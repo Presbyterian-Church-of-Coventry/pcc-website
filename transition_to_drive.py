@@ -84,6 +84,29 @@ def update_markdown_files(mp3_files):
 
     print(f"Summary: {replaced_count} files replaced, {failed_count} files failed")
 
+def remove_extra_audio_lines():
+    for md_file in glob.glob('content/sermons/*.md'):
+        with open(md_file, 'r') as file:
+            lines = file.readlines()
+        
+        new_lines = []
+        audio_found = False
+        for line in lines:
+            if line.startswith('audio:'):
+                audio_found = True
+                new_lines.append(line)
+            elif audio_found and line.startswith('  '):
+                continue
+            else:
+                audio_found = False
+                new_lines.append(line)
+        
+        with open(md_file, 'w') as file:
+            file.writelines(new_lines)
+        
+        print(f"Processed {md_file}")
+
 
 # print(mp3_files)
 update_markdown_files(mp3_files)
+remove_extra_audio_lines()
