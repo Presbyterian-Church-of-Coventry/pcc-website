@@ -29,7 +29,8 @@ async function addBulletinNodes({ collection }) {
 
   for (const file of res.data.files) {
     let title = file.name.replace('.pdf', '')
-    let date = /(\d{4}-\d{2}-\d{2})/.exec(title)[1]
+    let dateMatch = /(\d{4}-\d{2}-\d{2})/.exec(title)
+    let date = dateMatch ? dateMatch[1] : null
     let url = `https://drive.google.com/file/d/${file.id}/view`
 
     collection.addNode({
