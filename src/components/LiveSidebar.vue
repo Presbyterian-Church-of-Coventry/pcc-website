@@ -1,20 +1,17 @@
 <template>
   <aside class="flex-none menu">
-    <p class="menu-label">Links for {{ this.date }}</p>
+    <p class="menu-label">Links for {{ date }}</p>
     <ul class="menu-list">
       <li>
         <ul>
-          <li v-if="exists">
-            <a
-              :href="this.link"
-              target="_blank"
-              rel="noreferrer noopener"
+          <li v-if="bulletinLink">
+            <a :href="bulletinLink" target="_blank" rel="noreferrer noopener"
               >Bulletin &amp; Sermon Outline</a
             >
           </li>
           <li v-else>
             <a
-              style="cursor: not-allowed"
+              style="cursor: not-allowed;"
               target="_blank"
               rel="noreferrer noopener"
               >Bulletin &amp; Sermon Outline</a
@@ -39,37 +36,35 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   data() {
     return {
-      date: "",
-      link: "",
-      exists: false
+      date: '',
+      bulletinLink: '',
     }
   },
   created() {
     let now = new Date()
-    now.setDate(now.getDate() + (7-now.getDay()) % 7)
+    now.setDate(now.getDate() + ((7 - now.getDay()) % 7))
     let month = now.getMonth() + 1
     let day = now.getDate()
     let year = now.getFullYear()
-    this.date = month + "/" + day + "/" + year
-    if (month < 10) {
-      month = "0" + month
-    }
-    if (day < 10) {
-      day = "0" + day
-    }
-    this.link = "https://s3.wasabisys.com/coventrypca.church/bulletins/Bulletin " + year + "-" + month + "-" + day + ".pdf"
-
-    axios
-      .get(this.link)
-      .then((response) => response.status)
-      .then((data) => (this.exists = (data == 200)))
-  }
+    this.date = `${month}/${day}/${year}`
+  },
 }
 </script>
+
+<page-query>
+query {
+  settings: allSetting(filter: { path: { eq: "live" }}) {
+    edges {
+      node {
+        bulletinLink
+      }
+    }
+  }
+}
+</page-query>
 
 <style lang="scss">
 aside.menu ul.menu-list {

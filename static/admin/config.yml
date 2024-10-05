@@ -45,14 +45,14 @@ collections:
           name: 'audio',
           widget: 'string',
           required: false,
-          hint: 'Direct link to Sermon Audio file (either the download link from SermonAudio.com or another cloud storage service like Wasabi).',
+          hint: 'Direct link to the sermon audio file (eg. https://drive.google.com/file/u/6/d/1wRRuBLOhKzzP5sXVcJzQD-SIV68s2MEd/view).',
         }
       - {
           label: 'Sermon Video',
           name: 'video',
           widget: 'string',
           required: false,
-          hint: 'Link to sermon video (eg. Youtube - https://www.youtube.com/watch?v=Of95jIH0z24',
+          hint: 'Link to sermon video (eg. https://www.youtube.com/watch?v=Of95jIH0z24',
         }
       - {
           label: 'Description',
