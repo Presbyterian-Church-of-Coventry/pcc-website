@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2020-05-11
 scripture: Matthew 21:12-22
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2020.05.10.A Igniting the
+audio: https://drive.google.com/file/d/1zPEu8ZrZVvBEok8G4vpbq99MmFxFFcA5/view
   Worship Wars - Will Snyder.mp3
 ---

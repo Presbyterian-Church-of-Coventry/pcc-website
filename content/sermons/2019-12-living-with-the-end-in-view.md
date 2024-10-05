@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2019-12-01
 scripture: Matthew 13:47-50
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.12.01.A Living with
+audio: https://drive.google.com/file/d/1J5D5B8S76YfPx1rxNqG-MuhNYBSF5I_E/view
   the End in View - Will Snyder.mp3
 ---

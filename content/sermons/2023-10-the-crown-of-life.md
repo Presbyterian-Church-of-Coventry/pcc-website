@@ -4,6 +4,6 @@ series: james
 preacher: will-snyder
 date: 2023-05-14
 scripture: James 1:12-18
-audio: https://s3.us-east-1.wasabisys.com/coventrypca.church/sermons/2023.05.14A%20The%20Crown%20of%20Life%20-%20Will%20Snyder.mp3
+audio: https://drive.google.com/file/d/1FchsX03oLQp3BqACjTXpdwVnZs0U33Ht/view
 video: https://youtu.be/dETWbZ1Lv1s
 ---

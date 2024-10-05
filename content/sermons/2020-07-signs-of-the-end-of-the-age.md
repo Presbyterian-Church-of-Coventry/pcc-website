@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2020-07-19
 scripture: Matthew 24:1-35
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2020.07.19.A Signs of the
+audio: https://drive.google.com/file/d/1J_LQo7OYKHINnA8K2Ib14rEn7Rzqsbg4/view
   End of the Age - Will Snyder.mp3
 ---

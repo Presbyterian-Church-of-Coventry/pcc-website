@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2019-11-17
 scripture: Matthew 13:31-35
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.11.17.A The
+audio: https://drive.google.com/file/d/1_DfVw77d21bDH69zoCuSsbTm4fB2DAhb/view
   Improbable Progress of God's Kingdom - Will Snyder.mp3
 ---

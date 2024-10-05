@@ -4,6 +4,6 @@ series: proverbs
 preacher: will-snyder
 date: 2021-02-28
 scripture: Proverbs 3:1-12
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.02.28.A The Wisdom
+audio: https://drive.google.com/file/d/15Fm9k3t862yutLLiiOpRgyF_prcq5X7U/view
   that Brings Shalom - Will Snyder.mp3
 ---

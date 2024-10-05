@@ -4,6 +4,6 @@ series: james
 preacher: will-snyder
 date: 2023-05-07
 scripture: James 1:5-9
-audio: https://s3.us-east-1.wasabisys.com/coventrypca.church/sermons/2023.05.07A%20The%20Way%20of%20Wisdom%20-%20Will%20Snyder.mp3
+audio: https://drive.google.com/file/d/1pexWnN8w71HHg1K2AzJOkxvpf3Yo5hn2/view
 video: https://youtu.be/YxnXtvO3MKk
 ---

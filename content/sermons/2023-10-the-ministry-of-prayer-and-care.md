@@ -4,6 +4,6 @@ series: james
 preacher: will-snyder
 date: 2023-09-10
 scripture: James 5:13-20
-audio: https://s3.us-east-1.wasabisys.com/coventrypca.church/sermons/2023.09.10A%20The%20Ministry%20of%20Prayer%20and%20Care%20-%20Will%20Snyder.mp3
+audio: https://drive.google.com/file/d/1s5FNfJn_2bbxo2uBSGflBlFlnTE1-G7v/view
 video: https://youtu.be/lRaWOuOdmVc
 ---

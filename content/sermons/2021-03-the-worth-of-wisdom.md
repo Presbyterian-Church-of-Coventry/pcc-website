@@ -4,6 +4,6 @@ series: proverbs
 preacher: will-snyder
 date: 2021-03-07
 scripture: Proverbs 3:13-35
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.03.07.A The Worth of
+audio: https://drive.google.com/file/d/1OX_16v3qrRtMNoK4o22GOA--w2As5Rxn/view
   Wisdom - Will Snyder.mp3
 ---

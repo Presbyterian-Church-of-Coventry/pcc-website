@@ -3,6 +3,6 @@ title: Gospel Resilience and Joy
 preacher: lucas-dourado
 date: 2021-06-27
 scripture: Philippians 3:1-11
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.06.27.A Gospel
+audio: https://drive.google.com/file/d/1ynu3hOMHIz0s7LjuKDHXr-MYLjhQC7zT/view
   Resilience and Joy - Lucas Dourado.mp3
 ---

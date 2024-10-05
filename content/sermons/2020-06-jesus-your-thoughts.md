@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2020-06-21
 scripture: Matthew 22:41-46
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2020.06.21.A Jesus- Your
+audio: https://drive.google.com/file/d/1c34_pJbFKPCdUxjGuO7pP2R7Lc4k5hdQ/view
   Thoughts? - Will Snyder.mp3
 ---

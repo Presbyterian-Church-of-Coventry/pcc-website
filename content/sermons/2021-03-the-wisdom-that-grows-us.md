@@ -4,5 +4,5 @@ series: proverbs
 preacher: will-snyder
 date: 2021-02-21
 scripture: Proverbs 2:1-22
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.02.21.A%20%20The%20Wisdom%20that%20Grows%20Us%20-%20Will%20Snyder.mp3
+audio: https://drive.google.com/file/d/1v66HhqRhM3fnwREqvgwl90r5ZIOx9vRW/view
 ---

@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2019-08-25
 scripture: Matthew 11:1-19
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.08.25.A%20Misunderstanding%20the%20Messiah%20-%20Will%20Snyder.mp3
+audio: https://drive.google.com/file/d/15-b4vsjnvBn7eMNKffInF0EjF0JBFhjk/view
 video: https://www.youtube.com/watch?v=npgqc7JUC9
 ---

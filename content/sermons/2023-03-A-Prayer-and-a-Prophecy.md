@@ -4,6 +4,6 @@ series: daniel
 preacher: will-snyder
 date: 2023-03-05
 scripture: Daniel 9:20-27
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2023.03.05.A A Prayer and a Prophecy - Will Snyder.mp3
+audio: https://drive.google.com/file/d/1lquQewYVLLSr_G_8MOBIef83htY6ni6k/view
 video: https://youtu.be/dfGGjFQrLco
 ---

@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2019-08-11
 scripture: Matthew 9:35-38
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.08.11.A%20A%20Plentiful%20Harvest%2C%20Few%20-%20Will%20Snyder.mp3
+audio: https://drive.google.com/file/d/1cRidyJpVqA9ufY_YB9I8PwfC4gjV4Bd6/view
 video: https://www.youtube.com/watch?v=yR3siFFMa9
 ---

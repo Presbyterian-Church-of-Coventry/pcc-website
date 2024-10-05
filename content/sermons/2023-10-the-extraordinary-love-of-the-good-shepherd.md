@@ -3,7 +3,7 @@ title: Seeing and Serving the King - Ordination Service of David Augustine
 preacher: derekbates
 date: 2023-10-22
 scripture: Mark 6
-audio: https://s3.us-east-1.wasabisys.com/coventrypca.church/sermons/2023.10.22A%20Ordination%20Service%20of%20David%20Augustine%20-%20Derek%20Bates.mp3
+audio: https://drive.google.com/file/d/1Voogao9qTr3K1U2TWF_tJGEsw5_TDGmR/view
 video: https://www.youtube.com/watch?v=yVDapQCzINM
 ---
 M﻿ark 6

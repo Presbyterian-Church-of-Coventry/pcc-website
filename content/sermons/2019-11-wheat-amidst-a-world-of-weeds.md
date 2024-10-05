@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2019-11-10
 scripture: Matthew 13:24-43
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.11.10.A Wheat Amidst
+audio: https://drive.google.com/file/d/1FFrkXfoZu5RfUWShyXMGs7XwqeWjdOG7/view
   a World of Weeds - Will Snyder.mp3
 ---
