@@ -4,5 +4,5 @@ series: habakkuk
 preacher: will-snyder
 date: 2022-02-06
 scripture: Habakkuk 2:1-4
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2022.02.06.A The Righteous Shall Live by Faith - Will Snyder.mp3
+audio: https://drive.google.com/file/d/1cu9wZuYwnSldIp-MALcImRQO2KD3DdjK/view
 ---

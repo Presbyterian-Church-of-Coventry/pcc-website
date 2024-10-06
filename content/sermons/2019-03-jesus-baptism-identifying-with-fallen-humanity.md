@@ -4,6 +4,6 @@ date: 2019-03-31
 preacher: will-snyder
 series: matthew
 scripture: Matthew 3:13-17
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.03.31.A Jesus Baptism - Will Snyder - 441914734194.mp3
+audio: https://drive.google.com/file/d/16aQfw-c3zcmBMTqhx-udiHBZhJB6IrBw/view
 video: https://www.youtube.com/watch?v=p7Zoit9g76E
 ---

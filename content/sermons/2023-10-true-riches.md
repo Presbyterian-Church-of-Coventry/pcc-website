@@ -4,6 +4,6 @@ series: james
 preacher: will-snyder
 date: 2023-08-27
 scripture: James 5:1-6
-audio: https://s3.us-east-1.wasabisys.com/coventrypca.church/sermons/2023.08.27A%20True%20Riches%20-%20Will%20Snyder.mp3
+audio: https://drive.google.com/file/d/1lR1tCFB7YDznuauQF0KWpncvYKotT8fb/view
 video: https://youtu.be/AtvwnOv_EPY
 ---

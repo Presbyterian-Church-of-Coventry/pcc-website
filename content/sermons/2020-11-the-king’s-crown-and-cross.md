@@ -4,6 +4,5 @@ series: matthew
 preacher: will-snyder
 date: 2020-11-22
 scripture: Matthew 27:27-44
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2020.11.22.A The King’s
-  Crown and Cross - Will Snyder.mp3
+audio: https://drive.google.com/file/d/1BVenp33GQyZh-w5_lZZNRUqrrP8v_57b/view
 ---

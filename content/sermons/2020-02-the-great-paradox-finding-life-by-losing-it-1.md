@@ -4,6 +4,5 @@ series: matthew
 preacher: will-snyder
 date: 2020-02-02
 scripture: Matthew 16:24-28
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2020.02.02.A The Great
-  Paradox- Finding Life by Losing It - Will Snyder.mp3
+audio: https://drive.google.com/file/d/13nvMmQLCs5x3paSdXPcT6l3p_0MVsiZX/view
 ---

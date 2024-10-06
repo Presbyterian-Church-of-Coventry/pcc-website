@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2019-02-17
 scripture: Matthew 1:18-25
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.02.17.A Coming of Christ by Spirit - Will Snyder -.mp3
+audio: https://drive.google.com/file/d/1N7Xz3z4mBtmV09kAKF3bTT1Xabx0boYc/view
 video: https://www.youtube.com/watch?v=7i2LQO4Nor
 ---

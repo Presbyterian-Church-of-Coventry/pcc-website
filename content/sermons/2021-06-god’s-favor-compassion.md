@@ -3,6 +3,5 @@ title: God’s Favor & Compassion
 preacher: mack-gray
 date: 2021-05-23
 scripture: Daniel 1:1-21
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.05.23.A God’s Favor &
-  Compassion - Mack Gray.mp3
+audio: https://drive.google.com/file/d/1P-T7RPkri39d3mKMYVvaROF9gJi_j7Hl/view
 ---

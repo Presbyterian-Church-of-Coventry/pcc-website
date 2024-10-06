@@ -4,6 +4,5 @@ series: matthew
 preacher: will-snyder
 date: 2020-04-19
 scripture: Matthew 20:1-6
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2020.04.19.A God’s Grace
-  in a Wage Based World - Will Snyder.mp3
+audio: https://drive.google.com/file/d/180YL7-f8oxAlKJ5agUK2LkDsqDWCZwWE/view
 ---

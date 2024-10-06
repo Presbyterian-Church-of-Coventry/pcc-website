@@ -4,6 +4,6 @@ series: matthew
 preacher: will-snyder
 date: 2019-03-24
 scripture: Matthew 3:1-12
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2019.03.24.A Preparing the Way - Will Snyder.mp3
+audio: https://drive.google.com/file/d/1nhCdNVmvlVUyIblo_wwEdQynfKO2Jb5Y/view
 video: https://www.youtube.com/watch?v=LcDzdZrhAkE
 ---

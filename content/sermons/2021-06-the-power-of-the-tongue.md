@@ -4,6 +4,5 @@ series: proverbs
 preacher: will-snyder
 date: 2021-05-30
 scripture: Proverbs 18:21
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.05.30.A The Power of
-  the Tongue - Will Snyder.mp3
+audio: https://drive.google.com/file/d/1NLbENrx-uzMO1U0CMW6kqnhOJ99V7tQy/view
 ---

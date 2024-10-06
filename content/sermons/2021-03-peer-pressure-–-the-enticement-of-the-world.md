@@ -4,6 +4,5 @@ series: proverbs
 preacher: will-snyder
 date: 2021-02-07
 scripture: Proverbs 1:8-19
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.02.07.A Peer Pressure
-  – The Enticement of the World - Will Snyder.mp3
+audio: https://drive.google.com/file/d/1yHARtux5NBTeVaawXLweE5FUYjA3vIKz/view
 ---

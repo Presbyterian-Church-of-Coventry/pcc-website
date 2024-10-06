@@ -3,6 +3,5 @@ title: 'How Long, O LORD?'
 preacher: will-snyder
 date: 2021-01-24
 scripture: Psalm 13:1-6
-audio: https://s3.wasabisys.com/coventrypca.church/sermons/2021.01.24.A How Long, O
-  LORD - Will Snyder.mp3
+audio: https://drive.google.com/file/d/1-jEBe7Z6rdLdEX4pQgmvK0ttVOeoh1jC/view
 ---
