@@ -1,5 +1,6 @@
 ---
-title: 'Jesus: A Threat, A Madman, or The Lord Of Life?'
+title: "Jesus: A Threat, A Madman, or The Lord Of Life?"
+series: Mark
 preacher: will-snyder
 date: 2024-09-30
 scripture: Mark 3:7-35
