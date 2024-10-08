@@ -1,6 +1,6 @@
 ---
 title: The Lordship Of Jesus
-series: ""
+series: Mark
 preacher: will-snyder
 date: 2024-09-22
 scripture: Mark 2:18-3:6
