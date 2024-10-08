@@ -1,5 +1,6 @@
 ---
 title: Healing and the Authority Of Christ
+series: Mark
 preacher: will-snyder
 date: 2024-09-08
 scripture: Mark 1:21-45
