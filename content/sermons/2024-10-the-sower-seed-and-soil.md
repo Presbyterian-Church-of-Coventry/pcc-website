@@ -1,5 +1,6 @@
 ---
 title: The Sower, Seed, and Soil
+series: Mark
 preacher: will-snyder
 date: 2024-10-06
 scripture: "Mark 4:1-20 "
