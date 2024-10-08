@@ -1,5 +1,6 @@
 ---
 title: Ordinary People, Extraordinary Kingdom
+series: Mark
 preacher: will-snyder
 date: 2024-09-01
 scripture: Mark 1:14-20
