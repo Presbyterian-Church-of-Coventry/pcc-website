@@ -1,5 +1,6 @@
 ---
 title: The Great Physician
+series: Mark
 preacher: will-snyder
 date: 2024-09-15
 scripture: "Mark 2:1-17 "
