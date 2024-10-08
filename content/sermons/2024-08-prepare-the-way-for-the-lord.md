@@ -1,5 +1,6 @@
 ---
 title: Prepare The Way For The Lord
+series: Mark
 preacher: will-snyder
 date: 2024-08-25
 scripture: Mark 1:1-13
