@@ -25,19 +25,35 @@ async function addBulletinNodes({ collection }) {
     q: `'${DRIVE_FOLDER_ID}' in parents and mimeType='application/pdf'`,
     fields: 'files(id, name)',
     spaces: 'drive',
+    pageSize: 1000,
   })
 
-  for (const file of res.data.files) {
-    let title = file.name.replace('.pdf', '')
-    let dateMatch = /(\d{4}-\d{2}-\d{2})/.exec(title)
-    let date = dateMatch ? dateMatch[1] : null
-    let url = `https://drive.google.com/file/d/${file.id}/view`
+  const existingNodes = new Map()
 
-    collection.addNode({
-      title,
-      date,
-      url,
-    })
+  try {
+    for (const file of res.data.files) {
+      let title = file.name.replace('.pdf', '')
+      let dateMatch = /(\d{4}-\d{2}-\d{2})/.exec(title)
+      let date = dateMatch ? dateMatch[1] : null
+      let url = `https://drive.google.com/file/d/${file.id}/view`
+
+      // Create a unique key using title and date
+      const key = `${title}-${date}`
+
+      if (!existingNodes.has(key)) {
+        // If this is a new unique bulletin, add it to the collection
+        collection.addNode({
+          title,
+          date,
+          url,
+        })
+        existingNodes.set(key, true)
+      } else {
+        console.log(`Duplicate bulletin found: ${title} (${date}). Skipping.`)
+      }
+    }
+  } catch (error) {
+    console.error('Error processing bulletins:', error.message)
   }
 }
 

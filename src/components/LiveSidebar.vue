@@ -56,7 +56,7 @@ export default {
 
 <page-query>
 query {
-  settings: allSetting(filter: { path: { eq: "live" }}) {
+  settings: allSettings(filter: { path: { eq: "live" }}) {
     edges {
       node {
         bulletinLink
