@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "gridsome develop",
+    "prebuild": "node update_thumbnails.js",
     "build": "gridsome build",
     "explore": "gridsome explore"
   },

@@ -20,6 +20,12 @@ async function addBulletinNodes({ collection }) {
     scopes: ['https://www.googleapis.com/auth/drive'],
   })
 
+  // If you're building in dev mode, use this instead:
+  // const auth = new google.auth.GoogleAuth({
+  //   keyFile: 'drive-api.json',
+  //   scopes: ['https://www.googleapis.com/auth/drive'],
+  // })
+
   const drive = google.drive({ version: 'v3', auth })
   const res = await drive.files.list({
     q: `'${DRIVE_FOLDER_ID}' in parents and mimeType='application/pdf'`,
