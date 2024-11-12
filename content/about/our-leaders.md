@@ -39,7 +39,7 @@ David Augustine began as the Reformed University Fellowship (RUF) campus associa
 
 ![Danielle Bolliger](../images/2024-portrait_danielle.jpeg)
 
-Danielle has been a member of PCC since 2010. She became the Church Administrator in May of 2017. Danielle has been married to Deacon Scott Bolliger since 1984. They live in Tolland with their two children, Hannah and Evan, and one dog – their rescue, Abby. Danielle enjoys spending time with her family, hiking, riding bikes, or venturing into Boston for a Red Sox game. A favorite Bible verse: _Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand._ Isaiah 41:10
+Danielle has been a member of PCC since 2010. She became the Church Administrator in May of 2017. Danielle has been married to Deacon Scott Bolliger since 1984. They live in Windsor with their rescue dog, Abby. They have 2 adult children, Hannah and Evan, who live locally. Danielle enjoys spending time with her family, hiking, dancing, riding bikes, or venturing into Boston for a Red Sox game. A favorite Bible verse: _Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand._ Isaiah 41:10
 
 # Elders
 
