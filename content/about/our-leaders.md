@@ -31,7 +31,7 @@ Brett is also honored to work with Serge, an international missions organization
 
 ![David Augustine](../images/2024-portrait_david.jpeg)
 
-David Augustine began as the RUF campus associate for UCONN in June 2023. David was a member of RUF at the University of Pittsburgh where he graduated with a bachelor’s degree in neuroscience in 2018. After working for one year as a research laboratory technician he moved to St Louis to attend Covenant Theological Seminary, graduating in 2022 with an MDiv. While in St Louis he was a ministry intern at South City Church where he helped teach adult Sunday School and co-led the youth group. He then worked as interim campus associate for RUF at Indiana University of Pennsylvania for the ’22-’23 school year. He enjoys spending time outdoors, reading, and getting competitive over just about anything.
+David Augustine began as the Reformed University Fellowship (RUF) campus associate for UCONN in June 2023. David was a member of RUF at the University of Pittsburgh where he graduated with a bachelor's degree in neuroscience in 2018. After working for one year as a research laboratory technician he moved to St Louis to attend Covenant Theological Seminary, graduating in 2022 with an MDiv. While in St Louis he was a ministry intern at South City Church where he helped teach adult Sunday School and co-led the youth group. He then worked as interim campus associate for RUF at Indiana University of Pennsylvania for the '22-'23 school year. He enjoys spending time outdoors, reading, and getting competitive over just about anything.
 
 # Danielle Bolliger
 
