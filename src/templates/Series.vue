@@ -19,10 +19,19 @@
       <div class="container is-fullhd columns">
         <div class="column is-one-third">
           <g-image
+            v-if="series.thumbnail"
             :src="series.thumbnail"
+            width="500"
             alt="series thumbnail"
             class="thumbnail"
-          />
+          ></g-image>
+          <g-image
+            v-else
+            src="~/assets/images/no_series_thumbnail.jpg"
+            width="500"
+            alt="series thumbnail"
+            class="thumbnail"
+          ></g-image>
         </div>
         <div class="column">
           <div class="content leading-relaxed" v-html="series.content"></div>
@@ -93,7 +102,7 @@ export default {
       return this.$page.series
     },
     sermons() {
-      return this.$page.series.belongsTo.edges.map(sermon => {
+      return this.$page.series.belongsTo.edges.map((sermon) => {
         return { ...sermon.node }
       })
     },

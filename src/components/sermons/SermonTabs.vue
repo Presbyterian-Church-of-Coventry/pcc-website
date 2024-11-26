@@ -7,7 +7,7 @@
         target="_blank"
       >
         <ChurchIcon name="archive" />
-        <span class="ml-2">View legacy sermons</span>
+        <span class="ml-2">SermonAudio</span>
       </a>
       <section
         class="flex flex-col lg:flex-row mt-4 lg:mt-0 justify-end items-center"
