@@ -6,7 +6,16 @@
         <figure
           class="image w-full block md:w-0 md:hidden object-cover is-16by9"
         >
-          <g-image :src="sermon.series.thumbnail" width="500"></g-image>
+          <g-image
+            v-if="sermon.series.thumbnail"
+            :src="sermon.series.thumbnail"
+            width="500"
+          ></g-image>
+          <g-image
+            v-else
+            src="~/assets/images/no_series_thumbnail.jpg"
+            width="500"
+          ></g-image>
         </figure>
       </g-link>
       <figure
@@ -25,9 +34,15 @@
           class="block bg-gray-900"
         >
           <g-image
+            v-if="sermon.series.thumbnail"
             :src="sermon.series.thumbnail"
             :alt="sermon.name"
             class="opacity-100 hover:opacity-75"
+          ></g-image>
+          <g-image
+            v-else
+            src="~/assets/images/no_series_thumbnail.jpg"
+            width="500"
           ></g-image>
         </g-link>
         <g-image

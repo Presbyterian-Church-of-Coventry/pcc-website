@@ -12,7 +12,20 @@
         >
           <g-link :to="node.path">
             <figure class="image is-16by9">
-              <g-image :src="node.thumbnail" alt="series thumbnail" />
+              <g-image
+                v-if="node.thumbnail"
+                :src="node.thumbnail"
+                width="500"
+                alt="series thumbnail"
+                class="thumbnail"
+              ></g-image>
+              <g-image
+                v-else
+                src="~/assets/images/no_series_thumbnail.jpg"
+                width="500"
+                alt="series thumbnail"
+                class="thumbnail"
+              ></g-image>
             </figure>
             <h4 class="text-xl text-gray-700">{{ node.title }}</h4>
           </g-link>
