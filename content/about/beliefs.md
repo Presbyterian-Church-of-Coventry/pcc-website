@@ -19,4 +19,4 @@ We are a community of disciples sent on mission. In our homes, communities, nati
 
 # Presbyterian
 
-We are a congregation governed by elders. The word _Presbyterian_ comes from the Greek word meaning _elder_. In reflecting the teaching of scripture ([Titus 1:5](https://biblia.com/books/esv/Tt1.5); [1 Timothy 3:1-7](https://biblia.com/books/esv/1Ti3.1-7)), our elders seek to care for the congregation through shepherding, servant-leadership, and instruction in the Word of God.
+We are a congregation governed by elders. The word _Presbyterian_ comes from the Greek word meaning _elder_. In reflecting the teaching of scripture ([Titus 1:5](https://esv.org/verses/Titus+1:5/); [1 Timothy 3:1-7](https://www.esv.org/verses/1+Timothy+3.1-7/)), our elders seek to care for the congregation through shepherding, servant-leadership, and instruction in the Word of God.
