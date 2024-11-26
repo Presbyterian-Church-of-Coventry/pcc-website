@@ -11,20 +11,23 @@ const { google } = require('googleapis')
 
 async function addBulletinNodes({ collection }) {
   const DRIVE_FOLDER_ID = '1VKvQM2kQgzwB3Btk-v5ges0uQzp1Fn7t'
-  const auth = new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_CLIENT_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-    },
-    project_id: process.env.GOOGLE_PROJECT_ID,
-    scopes: ['https://www.googleapis.com/auth/drive'],
-  })
 
-  // If you're building in dev mode, use this instead:
-  // const auth = new google.auth.GoogleAuth({
-  //   keyFile: 'drive-api.json',
-  //   scopes: ['https://www.googleapis.com/auth/drive'],
-  // })
+  let auth
+  if (process.env.NODE_ENV !== 'development') {
+    auth = new google.auth.GoogleAuth({
+      credentials: {
+        client_email: process.env.GOOGLE_CLIENT_EMAIL,
+        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      },
+      project_id: process.env.GOOGLE_PROJECT_ID,
+      scopes: ['https://www.googleapis.com/auth/drive'],
+    })
+  } else {
+    auth = new google.auth.GoogleAuth({
+      keyFile: 'drive-api.json',
+      scopes: ['https://www.googleapis.com/auth/drive'],
+    })
+  }
 
   const drive = google.drive({ version: 'v3', auth })
   const res = await drive.files.list({

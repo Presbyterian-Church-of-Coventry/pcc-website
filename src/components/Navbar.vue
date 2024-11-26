@@ -42,7 +42,7 @@
 
           <div class="navbar-dropdown">
             <g-link class="navbar-item" to="/live" activeClass="is-active"
-              >Live 📺</g-link
+              >Live</g-link
             >
             <g-link
               class="navbar-item"
@@ -59,9 +59,7 @@
             <g-link class="navbar-item" to="/resources/recommended-books"
               >Recommended Books</g-link
             >
-            <g-link class="navbar-item" to="/directory"
-              >Directory</g-link
-            >
+            <g-link class="navbar-item" to="/directory">Directory</g-link>
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -132,8 +130,8 @@ export default {
     },
     aboutPages() {
       const pages = this.$static.allAboutPage.edges
-        .filter(edge => edge.node.slug !== 'index')
-        .map(edge => edge.node)
+        .filter((edge) => edge.node.slug !== 'index')
+        .map((edge) => edge.node)
       pages.push({
         title: 'Directions',
         path: '/about/directions',
@@ -157,8 +155,8 @@ export default {
     },
     ministryPages() {
       const pages = this.$static.allMinistriesPage.edges
-        .filter(edge => edge.node.slug !== 'index')
-        .map(edge => edge.node)
+        .filter((edge) => edge.node.slug !== 'index')
+        .map((edge) => edge.node)
 
       let order = [
         'Music',
