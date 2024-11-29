@@ -5,7 +5,7 @@
 
       <div class="flex flex-col gap-4 mb-8">
         <h2 class="text-xl font-semibold">Select Bulletin:</h2>
-        <div class="overflow-x-auto">
+        <div class="overflow-x-scroll">
           <div class="flex gap-3 w-max">
             <div
               v-for="{ node } in bulletinsWithoutSlides"
@@ -229,11 +229,13 @@ export default {
     return {
       selectedBulletin: null,
       generatingSlides: false,
+      hymnData: {},
       progressBar: false,
       progress: 0,
       slideUrls: [],
       currentSlideIndex: 0,
       slideEdits: [],
+      logoImage: null,
     }
   },
   computed: {
@@ -251,6 +253,7 @@ export default {
     this.loadCustomFont('Calibri', '/text.ttf')
     this.loadCustomFont('Calibri Bold', '/bold.ttf')
     window.addEventListener('keydown', this.handleKeyboard)
+    this.loadLogo()
   },
   beforeDestroy() {
     window.removeEventListener('keydown', this.handleKeyboard)
@@ -308,11 +311,8 @@ export default {
         ctx.fillText(formattedTitle, 145, 113)
 
         // Add logo
-        try {
-          const logo = await loadImage('logo.png')
-          ctx.drawImage(logo, 1300, 850, 556, 156)
-        } catch (err) {
-          console.error('Error loading logo:', err)
+        if (this.logoImage) {
+          ctx.drawImage(this.logoImage, 1300, 850, 556, 156)
         }
 
         // Add license text if provided
@@ -610,16 +610,18 @@ export default {
 
       try {
         // Convert Google Drive view URL to direct download URL
+        // let pdfUrl =
+        //   'https://cors.blazenetworking.com/' +
+        //   this.selectedBulletin.url
+        //     .replace('/view', '')
+        //     .replace(
+        //       'https://drive.google.com/file/d/',
+        //       'https://drive.google.com/uc?export=download&id='
+        //     )
         let pdfUrl =
-          this.selectedBulletin.url
-            .replace('/view', '')
-            .replace(
-              'https://drive.google.com/file/d/',
-              'https://drive.google.com/uc?id='
-            ) + '&export=download'
-        if (process.env.NODE_ENV === 'development') {
-          pdfUrl = 'http://localhost:3002/?url=' + pdfUrl
-        }
+          'https://www.googleapis.com/drive/v3/files/' +
+          id +
+          '?key=AIzaSyBzJo2OBvw-FL-Way0Z-Z4nL1R7SchyIYs&alt=media&source=downloadUrl'
         const pdfResponse = await axios.get(pdfUrl, {
           responseType: 'arraybuffer',
         })
@@ -750,9 +752,9 @@ export default {
     async getVerseText(reference) {
       // Fetch verse text from ESV API
       let url = `https://api.esv.org/v3/passage/text/?q=${reference}`
-      if (process.env.NODE_ENV === 'development') {
-        url = 'http://localhost:3002/?url=' + url
-      }
+      // if (process.env.NODE_ENV === 'development') {
+      //   url = 'http://localhost:3002/?url=' + url
+      // }
       const response = await axios.get(url, {
         headers: {
           Authorization: `Token 7666776cfaa6506622312a1ff55344c117bb9f66`,
@@ -771,110 +773,44 @@ export default {
       return final
     },
     async getHymnText(number) {
-      // Fetch hymn text from hymnary.org
-      let url = `https://hymnary.org/hymn/TH1990/${number}`
-      if (process.env.NODE_ENV === 'development') {
-        url = 'http://localhost:3002/?url=' + url
+      try {
+        // Fetch hymns.json if not already loaded
+        if (!this.hymnsData) {
+          const response = await axios.get('/hymns.json')
+          this.hymnsData = response.data
+        }
+
+        // Get hymn from loaded data
+        const hymn = this.hymnsData[number]
+        if (!hymn) {
+          return [number, ''] // Return empty if hymn not found
+        }
+
+        const title = hymn.title
+        const verses = hymn.verses
+
+        // Format verses with double newlines between them
+        const formattedVerses = verses
+          .map((verse) => verse.join('\n'))
+          .join('\n\n')
+
+        return [title, formattedVerses]
+      } catch (error) {
+        console.error('Error loading hymn:', error)
+        return [number, '']
       }
-      const response = await axios.get(url, {
-        withCredentials: true,
-        headers: { responseType: 'text' },
-      })
-      const html = response.data
-      // Parse HTML and extract hymn text
-      const parser = new DOMParser()
-      const doc = parser.parseFromString(html, 'text/html')
-
-      // Get title
-      const titleElem = doc.querySelector('.hymntitle')
-      const title = titleElem ? titleElem.textContent : number
-
-      // Get verses
-      const textDiv = doc.querySelector('#text')
-      if (!textDiv) return [title, '']
-
-      const verses = textDiv.querySelectorAll('p')
-      let currentVerse = []
-      let hymn = []
-      let refrain = null
-      let refrainFound = false
-
-      verses.forEach((verse) => {
-        const lines = verse.innerHTML.split('<br>')
-        lines.forEach((line) => {
-          line = line
-            .replace(/<\/?p>/g, '')
-            .replace(/<\/?br\/?>/g, '')
-            .trim()
-
-          if (line.length < 2 || line.startsWith('<div')) return
-
-          if (line[0].match(/\d/)) {
-            if (refrainFound) {
-              refrain = currentVerse
-              refrainFound = false
-            } else if (currentVerse.length) {
-              hymn.push(currentVerse.join('\n'))
-            }
-            currentVerse = [line.slice(2)]
-          } else if (line.startsWith('R')) {
-            refrainFound = true
-            if (currentVerse.length) hymn.push(currentVerse.join('\n'))
-            currentVerse = []
-          } else if (line.includes('[Refrain]') || line.includes('(Refrain)')) {
-            currentVerse.push(
-              '\p' + line.replace(/\[Refrain\]|\(Refrain\)/g, '').trim()
-            )
-          } else {
-            currentVerse.push(line)
-          }
-        })
-      })
-
-      if (currentVerse.length) hymn.push(currentVerse.join('\n'))
-
-      // Add refrain after each verse if it exists
-      if (refrain) {
-        hymn = hymn.map((verse, index) => {
-          const refrainText = refrain.join('\n')
-          return (
-            verse + '\p' + refrainText + (index < hymn.length - 1 ? '\n\n' : '')
-          )
-        })
-      } else {
-        // Add double newline between verses if no refrain
-        hymn = hymn.map((verse, index) =>
-          index < hymn.length - 1 ? verse + '\n\n' : verse
-        )
-      }
-
-      // Remove empty first element if exists
-      if (hymn.length && hymn[0].length === 0) {
-        hymn.shift()
-      }
-
-      if (hymn.some((line) => line.includes('license agreement'))) {
-        alert(
-          'Please click "I agree" on the license agreement page that will open then refresh this page.'
-        )
-        const newWindow = window.open(
-          'https://hymnary.org/hymn/TH1990/' + number,
-          '_blank',
-          'noopener,noreferrer'
-        )
-      }
-
-      return [title, hymn]
     },
     async loadCustomFont(fontName, fontUrl) {
       const font = new FontFace(fontName, `url(${fontUrl})`)
       await font.load()
       document.fonts.add(font)
     },
-    async loadCustomFont(fontName, fontUrl) {
-      const font = new FontFace(fontName, `url(${fontUrl})`)
-      await font.load()
-      document.fonts.add(font)
+    async loadLogo() {
+      try {
+        this.logoImage = await loadImage('logo.png')
+      } catch (err) {
+        console.error('Error loading logo:', err)
+      }
     },
   },
 }
