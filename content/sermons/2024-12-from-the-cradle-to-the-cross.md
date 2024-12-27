@@ -1,5 +1,5 @@
 ---
-title: From the cradle to the cross
+title: From the Cradle To The Cross
 series: Mark
 preacher: will-snyder
 date: 2024-12-22
