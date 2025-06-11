@@ -138,6 +138,13 @@
             <div>
               <label class="block text-sm font-medium mb-2 w-full relative">
                 Content
+                <button
+                  @click="toggleBold"
+                  class="absolute right-0 top-0 px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm"
+                  title="Toggle Bold (Ctrl/Cmd + B)"
+                >
+                  B
+                </button>
               </label>
 
               <div class="relative">
@@ -145,6 +152,8 @@
                   v-model="slideEdits[currentSlideIndex].content"
                   class="w-full p-2 border rounded h-32"
                   @change="updateSlide"
+                  @keydown.meta.b.prevent="toggleBold"
+                  @keydown.ctrl.b.prevent="toggleBold"
                 ></textarea>
               </div>
             </div>
@@ -379,11 +388,20 @@ export default {
         let lineWidth = leadingSpaces * ctx.measureText(' ').width
         for (const word of words) {
           const isSuperscript = word.startsWith('^')
-          ctx.font = isSuperscript ? '52px Calibri Bold' : '72px Calibri Bold'
-          // For superscripts, only measure the actual number part
-          const wordWidth = isSuperscript
-            ? ctx.measureText(word.substring(1) + ' ').width // Scale down superscript width
-            : ctx.measureText(word + ' ').width
+          const isUnbold = word.startsWith('~')
+          const displayWord = isSuperscript
+            ? word.substring(1)
+            : isUnbold
+            ? word.substring(1)
+            : word
+
+          ctx.font = isSuperscript
+            ? '52px Calibri Bold'
+            : isUnbold
+            ? '72px Calibri'
+            : '72px Calibri Bold'
+
+          const wordWidth = ctx.measureText(displayWord + ' ').width
 
           // Adjust max width based on estimated Y position
           const effectiveMaxWidth = estimatedY > 850 ? 1050 : 1530
@@ -450,8 +468,8 @@ export default {
             y += 76 // Half the normal line height for blank line spacing
           }
 
-          // Split line into regular text and superscript numbers
-          const parts = line.split(/(\^[0-9]+)/).filter(Boolean)
+          // Split line into regular text, superscript numbers, and unbold text
+          const parts = line.split(/(\^[0-9]+|~\w+)/).filter(Boolean)
           let x = 270 + indent * ctx.measureText(' ').width
 
           for (const part of parts) {
@@ -461,6 +479,12 @@ export default {
               currentCtx.fillStyle = 'dimgray'
               currentCtx.fillText(num, x, y - 20) // Move superscript higher
               x += currentCtx.measureText(num).width // Scale down superscript spacing
+            } else if (part.startsWith('~')) {
+              const text = part.substring(1)
+              currentCtx.font = '72px Calibri'
+              currentCtx.fillStyle = 'black'
+              currentCtx.fillText(text, x, y)
+              x += currentCtx.measureText(text).width
             } else {
               currentCtx.font = '72px Calibri Bold'
               currentCtx.fillStyle = 'black'
@@ -811,6 +835,42 @@ export default {
       } catch (err) {
         console.error('Error loading logo:', err)
       }
+    },
+    toggleBold() {
+      const selection = window.getSelection()
+      console.log('Selection:', selection)
+      const range = selection.getRangeAt(0)
+      const selectedText = range.toString()
+
+      if (!selectedText || !this.slideEdits[this.currentSlideIndex]) {
+        return
+      }
+
+      // Get the content from slideEdits
+      let content = this.slideEdits[this.currentSlideIndex].content
+
+      // Check if selected text has ~ prefix
+      const hasPrefix = selectedText
+        .split(' ')
+        .every((word) => word.startsWith('~'))
+
+      // Create new text with ~ toggled
+      const newText = selectedText
+        .split(' ')
+        .map((word) => {
+          if (hasPrefix) {
+            return word.startsWith('~') ? word.substring(1) : word
+          } else {
+            return word.startsWith('~') ? word : '~' + word
+          }
+        })
+        .join(' ')
+
+      // Replace in the content
+      content = content.replace(selectedText, newText)
+
+      // Update slideEdits
+      this.$set(this.slideEdits[this.currentSlideIndex], 'content', content)
     },
   },
 }
