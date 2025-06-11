@@ -807,7 +807,7 @@ export default {
     },
     async loadLogo() {
       try {
-        this.logoImage = await loadImage('/logo.png')
+        this.logoImage = await loadImage('logo.png')
       } catch (err) {
         console.error('Error loading logo:', err)
       }
