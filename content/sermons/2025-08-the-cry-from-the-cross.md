@@ -1,5 +1,6 @@
 ---
 title: The Cry from the Cross
+series: the-gospel-of-mark
 preacher: will-snyder
 date: 2025-08-10
 scripture: Mark 15:33-41
