@@ -1,5 +1,6 @@
 ---
 title: More Precious Than Gold
+series: book of job
 preacher: will-snyder
 date: 2026-02-15
 scripture: Job 28
