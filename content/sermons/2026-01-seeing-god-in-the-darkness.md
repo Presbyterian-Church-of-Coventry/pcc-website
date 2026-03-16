@@ -1,5 +1,6 @@
 ---
 title: Seeing God in the Darkness
+series: book of job
 preacher: will-snyder
 date: 2026-01-11
 scripture: "Job 11-14 "
