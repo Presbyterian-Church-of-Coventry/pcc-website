@@ -1,5 +1,6 @@
 ---
 title: Meeting God in the Whirlwind
+series: book of job
 preacher: will-snyder
 date: 2026-03-08
 scripture: Meeting God in the Whirlwind
