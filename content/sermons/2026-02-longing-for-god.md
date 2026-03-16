@@ -1,5 +1,6 @@
 ---
 title: Longing For God
+series: book of job
 preacher: will-snyder
 date: 2026-02-08
 scripture: Job 22-24
