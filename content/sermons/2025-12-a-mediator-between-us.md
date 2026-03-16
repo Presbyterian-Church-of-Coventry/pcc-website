@@ -1,5 +1,6 @@
 ---
 title: A Mediator Between Us
+series: book of job
 preacher: will-snyder
 date: 2025-12-14
 scripture: Job 8-10
