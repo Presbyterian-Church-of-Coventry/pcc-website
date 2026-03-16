@@ -1,5 +1,6 @@
 ---
 title: Our Living Redeemer
+series: book of job
 preacher: will-snyder
 date: 2026-01-25
 scripture: Job 18-19
