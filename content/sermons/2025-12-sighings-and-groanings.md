@@ -1,5 +1,6 @@
 ---
 title: Sighings and Groanings
+series: book of job
 preacher: brett-barbee
 date: 2025-11-30
 scripture: "Job 3: 1-26"
