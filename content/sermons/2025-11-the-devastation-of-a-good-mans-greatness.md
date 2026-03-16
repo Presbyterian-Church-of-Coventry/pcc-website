@@ -1,5 +1,6 @@
 ---
 title: The Devastation of a Good Man's Greatness
+series: book of job
 preacher: will-snyder
 date: 2025-11-21
 scripture: "Job 1: 6-22"
