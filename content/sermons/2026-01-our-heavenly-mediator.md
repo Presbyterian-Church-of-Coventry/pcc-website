@@ -1,5 +1,6 @@
 ---
 title: Our Heavenly Mediator
+series: book of job
 preacher: will-snyder
 date: 2026-01-18
 scripture: Job 15-17
