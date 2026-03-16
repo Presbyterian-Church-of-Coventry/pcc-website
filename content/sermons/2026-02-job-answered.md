@@ -1,5 +1,6 @@
 ---
 title: Job Answered
+series: book of job
 preacher: brett-barbee
 date: 2026-02-01
 scripture: Job 21:34
