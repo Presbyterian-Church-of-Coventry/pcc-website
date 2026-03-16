@@ -1,5 +1,6 @@
 ---
 title: Trusting God in a Troubled World
+series: book of job
 preacher: will-snyder
 date: 2025-12-07
 scripture: Job 4-7
