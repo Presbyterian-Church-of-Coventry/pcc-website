@@ -1,5 +1,6 @@
 ---
 title: God's Good World
+series: book of job
 preacher: will-snyder
 date: 2025-11-09
 scripture: Job 1:1-5
