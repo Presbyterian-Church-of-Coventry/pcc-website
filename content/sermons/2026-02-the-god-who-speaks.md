@@ -1,5 +1,6 @@
 ---
 title: The God Who Speaks
+series: book of job
 preacher: will-snyder
 date: 2026-02-22
 scripture: Job 32-33
