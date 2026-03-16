@@ -1,5 +1,6 @@
 ---
 title: Stop & Consider
+series: book of job
 preacher: brett-barbee
 date: 2026-03-01
 scripture: Job 37:14
