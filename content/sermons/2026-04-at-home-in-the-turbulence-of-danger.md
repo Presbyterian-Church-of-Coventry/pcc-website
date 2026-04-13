@@ -1,5 +1,6 @@
 ---
 title: At Home in the Turbulence of Danger
+series: book of job
 preacher: will-snyder
 date: 2026-04-12
 scripture: Job 39
