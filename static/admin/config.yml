@@ -28,6 +28,7 @@ collections:
         searchFields: ['title']
         valueField: 'id'
         displayFields: ['title']
+        options_length: 100
         required: false
       - label: 'Preacher'
         name: 'preacher'
@@ -108,24 +109,25 @@ collections:
         }
       - { label: 'Series Image', name: 'thumbnail', widget: 'image' }
       - { label: 'Description', name: 'body', widget: 'markdown' }
-  - label: 'Events'
-    label_singular: 'Event'
-    name: 'event'
-    folder: 'content/events'
-    create: true
-    slug: '{{year}}-{{month}}-{{slug}}'
-    sortable_fields: *sort_updated_first
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Event Image', name: 'thumbnail', widget: 'image' }
-      - { label: 'Start Date', name: 'startDate', widget: 'datetime' }
-      - { label: 'End Date', name: 'endDate', widget: 'datetime' }
-      - {
-          label: 'Description',
-          name: 'body',
-          required: false,
-          widget: 'markdown',
-        }
+  # Events — disabled in admin for now; content/events and site pages still active
+  # - label: 'Events'
+  #   label_singular: 'Event'
+  #   name: 'event'
+  #   folder: 'content/events'
+  #   create: true
+  #   slug: '{{year}}-{{month}}-{{slug}}'
+  #   sortable_fields: *sort_updated_first
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Event Image', name: 'thumbnail', widget: 'image' }
+  #     - { label: 'Start Date', name: 'startDate', widget: 'datetime' }
+  #     - { label: 'End Date', name: 'endDate', widget: 'datetime' }
+  #     - {
+  #         label: 'Description',
+  #         name: 'body',
+  #         required: false,
+  #         widget: 'markdown',
+  #       }
   - label: 'About Pages'
     label_singular: 'About Page'
     name: 'about'
@@ -181,6 +183,7 @@ collections:
               searchFields: ['title'],
               valueField: 'id',
               displayFields: ['title'],
+              options_length: 100,
             }
       - label: 'Recommended Books'
         name: 'recommended-books'
@@ -190,24 +193,21 @@ collections:
             name: 'sections'
             widget: 'list'
             fields:
-              - label: 'Section'
-                name: 'section'
-                widget: 'object'
+              - { label: 'Category', name: 'category', widget: 'string' }
+              - label: 'Books'
+                name: 'books'
+                widget: list
                 fields:
-                  - { label: 'Category', name: 'category', widget: string }
-                  - label: 'Books'
-                    name: 'books'
-                    widget: list
-                    fields:
-                      - label: 'Book'
-                        name: 'book'
-                        widget: 'object'
-                        fields:
-                          - { label: 'Name', name: 'name', widget: 'string' }
-                          - {
-                              label: 'Image',
-                              name: 'image',
-                              widget: 'image',
-                              required: false,
-                            }
-                          - { label: 'Link', name: 'link', widget: 'string' }
+                  - { label: 'Name', name: 'name', widget: 'string' }
+                  - {
+                      label: 'Image',
+                      name: 'image',
+                      widget: 'image',
+                      required: false,
+                    }
+                  - {
+                      label: 'Link',
+                      name: 'link',
+                      widget: 'string',
+                      required: false,
+                    }

@@ -1,6 +1,6 @@
 ---
 title: Maundy Thursday Service
-thumbnail: ../images/stephen-radford-121528-unsplash.jpg
+thumbnail: ../images/maundy.jpg
 startDate: 2023-04-06T23:00:00.000Z
 endDate: 2023-04-07T00:30:00.000Z
 ---

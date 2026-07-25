@@ -4,208 +4,62 @@
       <h1 class="title is-size-1">Recommended Books</h1>
     </template>
     <main class="content max-w-5xl mx-auto">
-      <h1>Apologetics</h1>
-      <div class="book-container">
-        <div class="book">
-          <a href="https://amzn.com/0875522432" target="_blank">
-            <figure class="image is-2by3 book-image">
+      <section v-for="section in sections" :key="section.category">
+        <h1>{{ section.category }}</h1>
+        <div class="book-container">
+          <div v-for="book in section.books" :key="book.name" class="book">
+            <a
+              v-if="book.link"
+              :href="book.link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <figure class="image is-2by3 book-image">
+                <g-image
+                  v-if="book.imageSrc"
+                  :src="book.imageSrc"
+                  :alt="book.name"
+                ></g-image>
+              </figure>
+            </a>
+            <figure v-else class="image is-2by3 book-image">
               <g-image
-                src="~/../content/images/books/frame_apologetics-to-the-glory-of-god.jpg"
+                v-if="book.imageSrc"
+                :src="book.imageSrc"
+                :alt="book.name"
               ></g-image>
             </figure>
-          </a>
+          </div>
         </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/keller_making-sense-of-god.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/oliphint_the-battle-belongs-to-the-lord.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
-      <h1>Christian Living</h1>
-      <div class="book-container">
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/packer_knowing-god.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/bridges_the-pursuit-of-holiness.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/ferguson_devoted-to-god.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
-      <h1>Theology</h1>
-      <div class="book-container">
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/boice_foundations-of-the-christian-faith.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/leith_introduction-to-the-reformed-tradition.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/mckim_calvins-institutes.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
-      <h1>Gospel</h1>
-      <div class="book-container">
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/stott_basic-christianity.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/bridges_the-gospel-for-real-life.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/horton_puttin-amazing-back-into-grace.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
-      <h1>Ministry</h1>
-      <div class="book-container">
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/welch_side-by-side.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/horton_puttin-amazing-back-into-grace.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
-      <h1>Church History</h1>
-      <div class="book-container">
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/reid_reformation.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/noll_turning-points.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/wilken_the-spirit-of-early-christian-thought.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
-      <h1>Biography</h1>
-      <div class="book-container">
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/metaxas_bonhoeffer.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/sayer_a-life-of-cs-lewis.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/nichols_martin-luther.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
-      <h1>Evangelism</h1>
-      <div class="book-container">
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/piper_let-the-nations-be-glad.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/miller_outgrowing-the-ingrown-church.jpg"
-            ></g-image>
-          </figure>
-        </div>
-        <div class="book">
-          <figure class="image is-2by3 book-image">
-            <g-image
-              src="~/../content/images/books/packer_evangelism-and-the-sovereignty-of-god.jpg"
-            ></g-image>
-          </figure>
-        </div>
-      </div>
+      </section>
     </main>
   </Layout>
 </template>
 
 <page-query>
-query Misc {
-  books: misc (path: "/misc/recommended-books") {
-    content
+query RecommendedBooks {
+  recommendedBooks: settings(path: "/content/settings/recommended-books") {
+    sections {
+      category
+      books {
+        name
+        image
+        link
+      }
+    }
   }
 }
 </page-query>
 
 <script>
 import Layout from '@/layouts/Page.vue'
-// import MinistriesSidebar from '@/components/MinistriesSidebar.vue'
+
+const bookImages = require.context(
+  '../../../content/images/books',
+  false,
+  /\.jpg$/
+)
+
 export default {
   metaInfo() {
     return {
@@ -214,6 +68,29 @@ export default {
   },
   components: {
     Layout,
+  },
+  computed: {
+    sections() {
+      return (this.$page.recommendedBooks.sections || []).map((section) => ({
+        ...section,
+        books: section.books.map((book) => ({
+          ...book,
+          imageSrc: this.bookImage(book.image),
+        })),
+      }))
+    },
+  },
+  methods: {
+    bookImage(image) {
+      if (!image) return null
+
+      const filename = image.split('/').pop()
+      try {
+        return bookImages(`./${filename}`)
+      } catch (error) {
+        return null
+      }
+    },
   },
 }
 </script>

@@ -1,6 +1,6 @@
 ---
 title: Discovery Class
-thumbnail: ../images/open-bible-bookmark1.jpeg
+thumbnail: ../images/open-bible.jpeg
 startDate: 2023-05-28T13:30:53.458Z
 endDate: 2023-05-28T14:15:37.798Z
 ---
