@@ -15,6 +15,10 @@ collections:
     preview_path_date_field: date
     slug: '{{year}}-{{month}}-{{slug}}' # Filename template
     summary: '{{date}} - {{title}}'
+    sortable_fields: &sort_updated_first
+      - { field: commit_date, default_sort: desc }
+      - title
+      - date
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - label: 'Sermon Series'
@@ -66,6 +70,7 @@ collections:
     folder: 'content/preachers'
     identifier_field: 'name'
     create: true # Allow users to create new documents in this collection
+    sortable_fields: *sort_updated_first
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - {
@@ -79,6 +84,7 @@ collections:
     name: 'series'
     folder: 'content/series'
     create: true # Allow users to create new documents in this collection
+    sortable_fields: *sort_updated_first
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
@@ -108,6 +114,7 @@ collections:
     folder: 'content/events'
     create: true
     slug: '{{year}}-{{month}}-{{slug}}'
+    sortable_fields: *sort_updated_first
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Event Image', name: 'thumbnail', widget: 'image' }
@@ -126,6 +133,7 @@ collections:
     create: true
     slug: '{{slug}}'
     summary: '{{title}}'
+    sortable_fields: *sort_updated_first
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
@@ -142,6 +150,7 @@ collections:
     create: true
     slug: '{{slug}}'
     summary: '{{title}}'
+    sortable_fields: *sort_updated_first
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
