@@ -119,6 +119,38 @@ collections:
           required: false,
           widget: 'markdown',
         }
+  - label: 'About Pages'
+    label_singular: 'About Page'
+    name: 'about'
+    folder: 'content/about'
+    create: true
+    slug: '{{slug}}'
+    summary: '{{title}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Slug',
+          name: 'slug',
+          widget: 'string',
+          hint: 'URL path segment (e.g. beliefs → /about/beliefs). Use "index" for the main About page.',
+        }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+  - label: 'Ministries'
+    label_singular: 'Ministry'
+    name: 'ministries'
+    folder: 'content/ministries'
+    create: true
+    slug: '{{slug}}'
+    summary: '{{title}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Slug',
+          name: 'slug',
+          widget: 'string',
+          hint: 'URL path segment (e.g. youth → /ministries/youth). Use "index" for the main Ministries page.',
+        }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
   - label: 'Settings'
     name: 'settings'
     files:
